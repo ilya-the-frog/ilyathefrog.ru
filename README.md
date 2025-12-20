@@ -2,7 +2,7 @@
 
 Сайт визитка, который размещен на бесплатном хостинге от github:
 
-👉 [Ссылка на мой сайт](https://tacitcoast.github.io/)
+👉 [Ссылка на мой сайт](https://ilya-the-frog.github.io/)
 
 ## Хостинг сайта-визитки на GitHub
 
@@ -31,7 +31,3 @@
 
 💡 Возможно сайт создастся не сразу, подожди 15-30 минут
 
-____
-[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
-![Profile views](https://gpvc.arturio.dev/tacitcoast)
-[![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)](https://visualstudio.microsoft.com)
