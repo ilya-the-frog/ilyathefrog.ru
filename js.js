@@ -78,7 +78,7 @@ const translations = {
     'footer.cta': 'Подпишитесь на Telegram-канал!'
   },
   en: {
-    'header.title': 'Ilya Lyagushenko // Ilya Lyagushenko',
+    'header.title': 'Ilya Lyagushenko // Илья Лягушенко',
     'header.subtitle': 'Product Manager | Fintech | Travel',
     'about.title': 'About',
     'about.summary.title': 'Summary',
@@ -118,7 +118,7 @@ const translations = {
 
     'projects.title': 'Side projects',
     'projects.channel.title': 'Telegram channel',
-    'projects.channel.link': 'Travel through a product manager\'s eyes',
+    'projects.channel.link': 'Product gone',
     'projects.bot.title': 'Bot',
     'projects.bot.link': 'Kirkorov (40k+ MAU)',
 
@@ -178,6 +178,8 @@ function applyTranslations(lang) {
   document
     .querySelectorAll('[data-lang-btn]')
     .forEach((btn) => btn.classList.toggle('lang-toggle__btn--active', btn.dataset.langBtn === lang));
+
+  updatePublicationDates(lang);
 }
 
 function setLang(lang) {
@@ -192,6 +194,34 @@ function setupLangSwitcher() {
 
   document.querySelectorAll('[data-lang-btn]').forEach((btn) => {
     btn.addEventListener('click', () => setLang(btn.dataset.langBtn));
+  });
+}
+
+function formatDate(iso, lang) {
+  if (!iso) return '';
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return '';
+
+  const day = String(date.getUTCDate()).padStart(2, '0');
+  const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+  const yearShort = String(date.getUTCFullYear()).slice(-2);
+
+  if (lang === 'ru') {
+    return `${day}.${month}.${yearShort}`;
+  }
+
+  return `${month}/${day}/${yearShort}`;
+}
+
+function updatePublicationDates(lang) {
+  document.querySelectorAll('.links__link[data-pub-date]').forEach((item) => {
+    const iso = item.getAttribute('data-pub-date');
+    const dateNode = item.querySelector('.links__date');
+    if (!dateNode) return;
+
+    const formatted = formatDate(iso, lang);
+    dateNode.textContent = formatted || '';
+    dateNode.style.display = formatted ? 'inline-flex' : 'none';
   });
 }
 
