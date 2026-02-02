@@ -55,20 +55,25 @@
   </head>
 
   <body>
+    <div class="lang-toggle" role="group" aria-label="Language switcher">
+      <button class="lang-toggle__btn" data-lang-btn="ru">RU</button>
+      <button class="lang-toggle__btn" data-lang-btn="en">EN</button>
+    </div>
+
     <header class="header">
       <img src="avatar.jpeg" alt="avatar" class="header__avatar" />
-      <h1 class="header__title">Илья Лягушенко // Ilya Lyagushenko</h1>
-      <h3 class="header__subtitle">Product Manager | Fintech | Travel</h3>
+      <h1 class="header__title" data-i18n="header.title">Илья Лягушенко // Ilya Lyagushenko</h1>
+      <h3 class="header__subtitle" data-i18n="header.subtitle">Product Manager | Fintech | Travel</h3>
     </header>
 
     <main>
       <!-- ABOUT -->
       <section class="links">
-        <h2 class="links__header">About</h2>
+        <h2 class="links__header" data-i18n="about.title">About</h2>
         <ul class="links__container">
           <li class="links__link">
-            <p class="links__title">Summary</p>
-            <p class="links__title" style="font-weight: 400; line-height: 1.35;">
+            <p class="links__title" data-i18n="about.summary.title">Summary</p>
+            <p class="links__title" data-i18n="about.summary.text" style="font-weight: 400; line-height: 1.35;">
               B2C Product Manager with 5+ years of fintech experience (credit cards). I own churn reduction and retention growth.
               Led cross-functional teams of engineers and analysts (BA/SA/PA) of up to 15 people. Delivered executive-level initiatives
               and worked with a wide range of stakeholders. The initiatives I led generated in excess of several million USD in profit
@@ -77,8 +82,8 @@
           </li>
 
           <li class="links__link">
-            <p class="links__title">Expertise & achievement</p>
-            <p class="links__title" style="font-weight: 400; line-height: 1.35;">
+            <p class="links__title" data-i18n="about.expertise.title">Expertise & achievement</p>
+            <p class="links__title" data-i18n="about.expertise.text" style="font-weight: 400; line-height: 1.35;">
               Expertise: fintech and credit cards, retention, web and mobile product development, contractor/agent apps and self-service portals,
               banking product launches, UI/UX, and customer experience improvements.
               <br />
@@ -90,71 +95,71 @@
 
       <!-- CONTACTS -->
       <section class="links">
-        <h2 class="links__header">My contacts</h2>
+        <h2 class="links__header" data-i18n="contacts.title">My contacts</h2>
 
         <ul class="links__container">
           <li class="links__link">
-            <p class="links__title">Telegram</p>
+            <p class="links__title" data-i18n="contacts.telegram.title">Telegram</p>
             <a class="linsk__link" href="https://t.me/travelasproduct">
               <span class="link-logo link-logo--telegram" aria-hidden="true">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path d="M28.2307 89.8987C79.5175 66.8612 145.887 38.7737 155.048 34.8862C179.08 24.7112 186.454 26.6612 182.777 49.1945C180.137 65.3903 172.518 119.011 166.446 152.386C162.842 172.178 154.758 174.524 142.047 165.961C135.934 161.84 105.079 141.007 98.3828 136.115C92.2699 131.657 83.839 126.295 94.4123 115.732C98.1747 111.97 122.839 87.9237 142.055 69.207C144.573 66.7487 141.41 62.7112 138.505 64.682C112.604 82.2195 76.6936 106.561 72.1232 109.732C65.2186 114.52 58.5874 116.715 46.6838 113.224C37.6898 110.586 28.904 107.44 25.4843 106.24C12.3157 101.624 15.4416 95.6445 28.2307 89.8987Z" />
                 </svg>
               </span>
-              @travelasproduct
+              <span data-i18n="contacts.telegram.handle">@travelasproduct</span>
             </a>
           </li>
 
           <li class="links__link">
-            <p class="links__title">LinkedIn</p>
+            <p class="links__title" data-i18n="contacts.linkedin.title">LinkedIn</p>
             <a class="linsk__link" href="https://www.linkedin.com/in/ilyathefrog/">
               <span class="link-logo link-logo--linkedin" aria-hidden="true">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path d="M165.151 17C170.063 17 174.773 18.9511 178.246 22.4241C181.719 25.897 183.67 30.6074 183.67 35.5189V165.151C183.67 170.063 181.719 174.773 178.246 178.246C174.773 181.719 170.063 183.67 165.151 183.67H35.5189C30.6074 183.67 25.897 181.719 22.4241 178.246C18.9511 174.773 17 170.063 17 165.151V35.5189C17 30.6074 18.9511 25.897 22.4241 22.4241C25.897 18.9511 30.6074 17 35.5189 17H165.151ZM160.521 160.521V111.446C160.521 103.441 157.341 95.7627 151.68 90.1018C146.019 84.4408 138.341 81.2605 130.336 81.2605C122.465 81.2605 113.298 86.0755 108.854 93.2978V83.0198H83.0198V160.521H108.854V114.872C108.854 107.743 114.595 101.909 121.724 101.909C125.162 101.909 128.46 103.275 130.891 105.706C133.322 108.137 134.688 111.434 134.688 114.872V160.521H160.521ZM52.9266 68.4825C57.0523 68.4825 61.009 66.8436 63.9263 63.9263C66.8436 61.009 68.4825 57.0523 68.4825 52.9266C68.4825 44.3154 61.5379 37.2782 52.9266 37.2782C48.7764 37.2782 44.7962 38.9269 41.8615 41.8615C38.9269 44.7962 37.2782 48.7764 37.2782 52.9266C37.2782 61.5379 44.3154 68.4825 52.9266 68.4825ZM65.7973 160.521V83.0198H40.1486V160.521H65.7973Z" />
                 </svg>
               </span>
-              Ilya Lyagushenko
+              <span data-i18n="contacts.linkedin.handle">Ilya Lyagushenko</span>
             </a>
           </li>
 
           <li class="links__link">
-            <p class="links__title">GitHub</p>
+            <p class="links__title" data-i18n="contacts.github.title">GitHub</p>
             <a class="linsk__link" href="https://github.com/ilya-the-frog">
               <span class="link-logo link-logo--github" aria-hidden="true">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path d="M183.333 100C183.333 137.333 158.833 168.917 125 179.5V158.333C125 151.208 122 144.833 117.25 140.25C139.083 136.292 150 123.583 150 100C150 89.7918 147.917 81.7084 143.833 75.4168C145.667 68.2918 146.75 58.1668 141.667 50.0001C131.833 50.0001 124.958 55.7918 120.917 60.5418C114.875 59.0834 107.917 58.3334 100 58.3334C92.5001 58.3334 85.5834 59.1668 79.4168 60.8751C75.4168 56.0834 68.4168 50.0001 58.3334 50.0001C52.4168 59.5001 54.8334 69.7501 57.0834 75.5001C52.5834 81.7918 50.0001 89.8751 50.0001 100C50.0001 123.583 60.9168 136.292 82.7501 140.25C79.9584 142.958 77.7918 146.25 76.4584 150H66.6668C60.6668 150 58.3334 147.333 55.1251 143C51.9167 138.667 48.4584 135.75 44.3334 134.542C42.1251 134.292 40.6251 136.083 42.5834 137.667C49.1251 142.375 49.5834 150.083 52.2084 155.125C54.5834 159.667 59.5001 162.5 65.0418 162.5H75.0001V179.5C41.1668 168.917 16.6667 137.333 16.6667 100C16.6667 53.9584 53.9584 16.6667 100 16.6667C146.042 16.6667 183.333 53.9584 183.333 100Z" />
                 </svg>
               </span>
-              github.com/ilya-the-frog
+              <span data-i18n="contacts.github.handle">github.com/ilya-the-frog</span>
             </a>
           </li>
 
           <li class="links__link">
-            <p class="links__title">Twitter</p>
+            <p class="links__title" data-i18n="contacts.twitter.title">Twitter</p>
             <a class="linsk__link" href="https://x.com/ilya_the_frog">
               <span class="link-logo link-logo--twitter" aria-hidden="true">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path d="M187.167 49.9999C180.75 52.9166 173.833 54.8333 166.667 55.7499C174 51.3333 179.667 44.3333 182.333 35.9166C175.417 40.0833 167.75 42.9999 159.667 44.6666C153.083 37.4999 143.833 33.3333 133.333 33.3333C113.75 33.3333 97.75 49.3333 97.75 69.0833C97.75 71.9166 98.0833 74.6666 98.6667 77.2499C69 75.7499 42.5833 61.4999 25 39.9166C21.9167 45.1666 20.1667 51.3333 20.1667 57.8333C20.1667 70.2499 26.4167 81.2499 36.0833 87.4999C30.1667 87.4999 24.6667 85.8333 19.8333 83.3333C19.8333 83.3333 19.8333 83.3332 19.8333 83.5832C19.8333 100.917 32.1667 115.417 48.5 118.667C45.5 119.5 42.3333 119.917 39.0833 119.917C36.8333 119.917 34.5833 119.667 32.4167 119.25C36.9167 133.333 50 143.833 65.75 144.083C53.5833 153.75 38.1667 159.417 21.3333 159.417C18.5 159.417 15.6667 159.25 12.8333 158.917C28.6667 169.083 47.5 175 67.6667 175C133.333 175 169.417 120.5 169.417 73.2499C169.417 71.6666 169.417 70.1666 169.333 68.5832C176.333 63.5832 182.333 57.2499 187.167 49.9999Z" />
                 </svg>
               </span>
-              x.com/ilya_the_frog
+              <span data-i18n="contacts.twitter.handle">x.com/ilya_the_frog</span>
             </a>
           </li>
 
           <li class="links__link">
-            <p class="links__title">Instagram*</p>
-            <a class="linsk__link" href="https://www.instagram.com/ilya-the-frog">@ilya-the-frog*</a>
+            <p class="links__title" data-i18n="contacts.instagram.title">Instagram*</p>
+            <a class="linsk__link" href="https://www.instagram.com/ilya-the-frog"><span data-i18n="contacts.instagram.handle">@ilya-the-frog*</span></a>
           </li>
 
           <li class="links__link">
-            <p class="links__title">Email</p>
+            <p class="links__title" data-i18n="contacts.email.title">Email</p>
             <a class="linsk__link" href="mailto:ilya.the.frog@gmail.com">
               <span class="link-logo link-logo--email" aria-hidden="true">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path d="M166.667 33.3333H33.3334C24.1251 33.3333 16.7501 40.7916 16.7501 49.9999L16.6667 150C16.6667 159.208 24.1251 166.667 33.3334 166.667H166.667C175.875 166.667 183.333 159.208 183.333 150V49.9999C183.333 40.7916 175.875 33.3333 166.667 33.3333ZM166.667 150H33.3334V66.6666L100 108.333L166.667 66.6666V150ZM100 91.6666L33.3334 49.9999H166.667L100 91.6666Z" />
                 </svg>
               </span>
-              ilya.the.frog@gmail.com
+              <span data-i18n="contacts.email.handle">ilya.the.frog@gmail.com</span>
             </a>
           </li>
         </ul>
@@ -162,169 +167,169 @@
 
       <!-- HELP -->
       <section class="links">
-        <h2 class="links__header">How can I help</h2>
+        <h2 class="links__header" data-i18n="help.title">How can I help</h2>
         <ul class="links__container">
           <li class="links__link">
-            <p class="links__title">Consultations</p>
-            <a class="linsk__link" href="https://t.me/travelasproduct/249">Записаться на консультацию</a>
+            <p class="links__title" data-i18n="help.consult.title">Consultations</p>
+            <a class="linsk__link" href="https://t.me/travelasproduct/249" data-i18n="help.consult.link">Записаться на консультацию</a>
           </li>
           <li class="links__link">
-            <p class="links__title">Mentoring</p>
-            <a class="linsk__link" href="https://t.me/travelasproduct/249">Менторство по продукту</a>
+            <p class="links__title" data-i18n="help.mentoring.title">Mentoring</p>
+            <a class="linsk__link" href="https://t.me/travelasproduct/249" data-i18n="help.mentoring.link">Менторство по продукту</a>
           </li>
           <li class="links__link">
-            <p class="links__title">Content</p>
-            <a class="linsk__link" href="https://t.me/travelasproduct">Канал «Путешествия глазами продакта»</a>
+            <p class="links__title" data-i18n="help.content.title">Content</p>
+            <a class="linsk__link" href="https://t.me/travelasproduct" data-i18n="help.content.link">Канал «Путешествия глазами продакта»</a>
           </li>
         </ul>
       </section>
 
       <!-- SPEAKER -->
       <section class="links">
-        <h2 class="links__header">Speaker</h2>
+        <h2 class="links__header" data-i18n="speaker.title">Speaker</h2>
         <ul class="links__container">
           <li class="links__link">
-            <p class="links__title">Сириус</p>
-            <a class="linsk__link" href="https://t.me/travelasproduct/125">Выступление</a>
+            <p class="links__title" data-i18n="speaker.sirius.title">Сириус</p>
+            <a class="linsk__link" href="https://t.me/travelasproduct/125" data-i18n="speaker.sirius.link">Выступление</a>
           </li>
           <li class="links__link">
-            <p class="links__title">Product&Marketing — про клиентов</p>
-            <a class="linsk__link" href="https://t.me/product2marketing/381">Выступление</a>
+            <p class="links__title" data-i18n="speaker.pm.title">Product&Marketing — про клиентов</p>
+            <a class="linsk__link" href="https://t.me/product2marketing/381" data-i18n="speaker.pm.link">Выступление</a>
           </li>
         </ul>
       </section>
 
       <!-- FREE TIME -->
       <section class="links">
-        <h2 class="links__header">My project in my free time</h2>
+        <h2 class="links__header" data-i18n="projects.title">My project in my free time</h2>
         <ul class="links__container">
           <li class="links__link">
-            <p class="links__title">Telegram channel</p>
-            <a class="linsk__link" href="https://t.me/travelasproduct">Travel through a product manager's eyes</a>
+            <p class="links__title" data-i18n="projects.channel.title">Telegram channel</p>
+            <a class="linsk__link" href="https://t.me/travelasproduct" data-i18n="projects.channel.link">Travel through a product manager's eyes</a>
           </li>
 
           <li class="links__link">
-            <p class="links__title">Bot</p>
-            <a class="linsk__link" href="https://t.me/pizdabalabol_bot">Kirkorov (40k+ MAU)</a>
+            <p class="links__title" data-i18n="projects.bot.title">Bot</p>
+            <a class="linsk__link" href="https://t.me/pizdabalabol_bot" data-i18n="projects.bot.link">Kirkorov (40k+ MAU)</a>
           </li>
         </ul>
       </section>
 
       <!-- PUBLICATIONS -->
       <section class="links">
-        <h2 class="links__header">Publications</h2>
+        <h2 class="links__header" data-i18n="publications.title">Publications</h2>
         <ul class="links__container">
           <li class="links__link">
             <p class="links__title">VC.ru</p>
-            <a class="linsk__link" href="https://vc.ru/id414988/2634631-kak-vernut-klientov-bez-novykh-funktsiy">How to win back customers without new features</a>
+            <a class="linsk__link" href="https://vc.ru/id414988/2634631-kak-vernut-klientov-bez-novykh-funktsiy" data-i18n="publications.vc">How to win back customers without new features</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">GoPractice</p>
-            <a class="linsk__link" href="https://gopractice.ru/skills/from-mcdonalds-to-product/">From McDonald's to Product</a>
+            <a class="linsk__link" href="https://gopractice.ru/skills/from-mcdonalds-to-product/" data-i18n="publications.gopractice">From McDonald's to Product</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">Supprt.science</p>
-            <a class="linsk__link" href="https://supprt.science/2025/06/24/как-продукту-и-поддержке-наладить-кон/">How product and support can build better communication</a>
+            <a class="linsk__link" href="https://supprt.science/2025/06/24/как-продукту-и-поддержке-наладить-кон/" data-i18n="publications.support">How product and support can build better communication</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">TJ</p>
-            <a class="linsk__link" href="https://t-j.ru/news/china-tourist-visa/">China tourist visa</a>
+            <a class="linsk__link" href="https://t-j.ru/news/china-tourist-visa/" data-i18n="publications.tj.tourist">China tourist visa</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">TJ</p>
-            <a class="linsk__link" href="https://t-j.ru/china-transit-visa/">China transit visa</a>
+            <a class="linsk__link" href="https://t-j.ru/china-transit-visa/" data-i18n="publications.tj.transit">China transit visa</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">Yandex.Rental</p>
-            <a class="linsk__link" href="https://arenda.yandex.ru/journal/post/svoyu-kvartiru-sdayu-a-sam-zhivu-na-syomnoy-istoriya-sobstvennika-iz-moskvy/">Renting out my apartment while living in a rental</a>
+            <a class="linsk__link" href="https://arenda.yandex.ru/journal/post/svoyu-kvartiru-sdayu-a-sam-zhivu-na-syomnoy-istoriya-sobstvennika-iz-moskvy/" data-i18n="publications.yandex">Renting out my apartment while living in a rental</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">TJ</p>
-            <a class="linsk__link" href="https://t-j.ru/japan-tourist-visa/">Japan tourist visa</a>
+            <a class="linsk__link" href="https://t-j.ru/japan-tourist-visa/" data-i18n="publications.tj.japan">Japan tourist visa</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">T—Ж</p>
-            <a class="linsk__link" href="https://t-j.ru/dobro-volunteering-pros-cons/">Good: volunteering pros and cons</a>
+            <a class="linsk__link" href="https://t-j.ru/dobro-volunteering-pros-cons/" data-i18n="publications.tj.volunteer">Good: volunteering pros and cons</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">T—Ж</p>
-            <a class="linsk__link" href="https://t-j.ru/laser-vision-correction-po-kuponu/">Laser vision correction with a coupon</a>
+            <a class="linsk__link" href="https://t-j.ru/laser-vision-correction-po-kuponu/" data-i18n="publications.tj.laser">Laser vision correction with a coupon</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">TJ</p>
-            <a class="linsk__link" href="https://t-j.ru/pobeditel/">Winner</a>
+            <a class="linsk__link" href="https://t-j.ru/pobeditel/" data-i18n="publications.tj.winner">Winner</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">SMMplanner</p>
-            <a class="linsk__link" href="https://smmplanner.com/blog/vasha-celevaya-auditoriya-proshe-chem-vy-dumaete/">Your target audience is easier to reach than you think</a>
+            <a class="linsk__link" href="https://smmplanner.com/blog/vasha-celevaya-auditoriya-proshe-chem-vy-dumaete/" data-i18n="publications.smm.audience">Your target audience is easier to reach than you think</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">SMMplanner</p>
-            <a class="linsk__link" href="https://smmplanner.com/blog/marketingovaya-blizorukost-chto-eto-i-chem-ona-grozit-firme/">Marketing shortsightedness: what it is and how it threatens your brand</a>
+            <a class="linsk__link" href="https://smmplanner.com/blog/marketingovaya-blizorukost-chto-eto-i-chem-ona-grozit-firme/" data-i18n="publications.smm.shortsight">Marketing shortsightedness: what it is and how it threatens your brand</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">SMMplanner</p>
-            <a class="linsk__link" href="https://smmplanner.com/blog/dolzhnosti-v-digital-marketinge/">Roles in digital marketing</a>
+            <a class="linsk__link" href="https://smmplanner.com/blog/dolzhnosti-v-digital-marketinge/" data-i18n="publications.smm.roles">Roles in digital marketing</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">SMMplanner</p>
-            <a class="linsk__link" href="https://smmplanner.com/blog/kospleerydlya-piarshikov-i-marketologov/">Cosplayers for PR and marketing professionals</a>
+            <a class="linsk__link" href="https://smmplanner.com/blog/kospleerydlya-piarshikov-i-marketologov/" data-i18n="publications.smm.cosplay">Cosplayers for PR and marketing professionals</a>
           </li>
 
           <li class="links__link">
             <p class="links__title">SMMplanner</p>
-            <a class="linsk__link" href="https://smmplanner.com/blog/industriya-razvlechenij-international-2016-i-final-kontinentalnoj-ligi-league-legends/">Entertainment industry: The International 2016 and the LoL Continental League final</a>
+            <a class="linsk__link" href="https://smmplanner.com/blog/industriya-razvlechenij-international-2016-i-final-kontinentalnoj-ligi-league-legends/" data-i18n="publications.smm.entertainment">Entertainment industry: The International 2016 and the LoL Continental League final</a>
           </li>
         </ul>
       </section>
 
       <!-- RESUME -->
       <section class="links">
-        <h2 class="links__header">My resume</h2>
+        <h2 class="links__header" data-i18n="resume.title">My resume</h2>
         <ul class="links__container">
           <li class="links__link">
-            <p class="links__title">Resume</p>
-            <a class="linsk__link" href="https://hh.ru/resume/74529bd2ff0b8e2a810039ed1f43465541474a">HH</a>
+            <p class="links__title" data-i18n="resume.label">Resume</p>
+            <a class="linsk__link" href="https://hh.ru/resume/74529bd2ff0b8e2a810039ed1f43465541474a" data-i18n="resume.link">HH</a>
           </li>
         </ul>
       </section>
 
       <!-- SKILLS -->
       <section class="links">
-        <h2 class="links__header">Hard Skills</h2>
+        <h2 class="links__header" data-i18n="skills.hard.title">Hard Skills</h2>
         <ul class="links__container">
           <li class="links__link">
-            <a class="linsk__link" href="https://gopractice.ru/sat/cert/1153946">GoPractice — SAT Certificate</a>
+            <a class="linsk__link" href="https://gopractice.ru/sat/cert/1153946" data-i18n="skills.hard.link">GoPractice — SAT Certificate</a>
           </li>
         </ul>
       </section>
 
       <section class="links">
-        <h2 class="links__header">Soft Skills</h2>
+        <h2 class="links__header" data-i18n="skills.soft.title">Soft Skills</h2>
         <ul class="links__container">
           <li class="links__link">
-            <a class="linsk__link" href="https://t.me/travelasproduct/249">Mentoring/Consultations (examples & cases on request)</a>
+            <a class="linsk__link" href="https://t.me/travelasproduct/249" data-i18n="skills.soft.link">Mentoring/Consultations (examples & cases on request)</a>
           </li>
         </ul>
-        <p class="links__note">*Организация, деятельность которой запрещена на территории Российской Федерации</p>
+        <p class="links__note" data-i18n="skills.note">*Организация, деятельность которой запрещена на территории Российской Федерации</p>
       </section>
     </main>
 
     <footer>
-      <a class="button-link" href="https://t.me/travelasproduct">Подпишитесь на Telegram-канал!</a>
+      <a class="button-link" href="https://t.me/travelasproduct" data-i18n="footer.cta">Подпишитесь на Telegram-канал!</a>
     </footer>
 
     <script type="text/javascript" src="js.js"></script>

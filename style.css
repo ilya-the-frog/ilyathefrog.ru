@@ -41,6 +41,42 @@ body {
   align-items: center;
 }
 
+.lang-toggle {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #dadada;
+  border-radius: 999px;
+  padding: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.lang-toggle__btn {
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6a6a6a;
+  transition: all 0.2s ease;
+}
+
+.lang-toggle__btn:hover {
+  color: #000;
+}
+
+.lang-toggle__btn--active {
+  background: linear-gradient(135deg, #a370f0, #7a4ccc);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(122, 76, 204, 0.35);
+}
+
 /* Общий контейнер для основных блоков (header/sections/footer) */
 .header,
 .links,

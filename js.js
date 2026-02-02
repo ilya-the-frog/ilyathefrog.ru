@@ -1,7 +1,198 @@
-/* Это объявление переменной, мы наши кнопку по тегу */
-const button = document.querySelector('button');
+const LANG_KEY = 'preferred_lang_v1';
+const FALLBACK_LANG = 'en';
+const SUPPORTED = ['ru', 'en'];
 
-/* Тут на кнопку навешиваем обрабочик, который ждёт клика и тогда запустит логику */
-button.addEventListener('click', function() {
-	alert("If it's later than 10 p.m. and you think it's still a great idea, don't do it 😉")
-})
+const translations = {
+  ru: {
+    'header.title': 'Илья Лягушенко // Ilya Lyagushenko',
+    'header.subtitle': 'Продакт-менеджер | Финтех | Путешествия',
+    'about.title': 'Обо мне',
+    'about.summary.title': 'Резюме',
+    'about.summary.text':
+      'B2C продакт-менеджер с 5+ годами опыта в финтехе (кредитные карты). Отвечаю за сокращение оттока и рост удержания. Руководил кросс‑функциональными командами инженеров и аналитиков (BA/SA/PA) до 15 человек. Вёл топ-инициативы и работал с широким кругом стейкхолдеров. В 2024–2025 инициированные проекты принесли T‑Bank прибыль в несколько млн USD за год.',
+    'about.expertise.title': 'Экспертиза и достижения',
+    'about.expertise.text':
+      'Экспертиза: финтех и кредитные карты, удержание, web и mobile, приложения и личные кабинеты для агентов/подрядчиков, запуск банковских продуктов, UI/UX и улучшение клиентского опыта.\nКлючевое достижение: сократил отток по кредитным картам T‑Bank на 34% YoY по всей воронке.',
+
+    'contacts.title': 'Контакты',
+    'contacts.telegram.title': 'Telegram',
+    'contacts.telegram.handle': '@travelasproduct',
+    'contacts.linkedin.title': 'LinkedIn',
+    'contacts.linkedin.handle': 'Ilya Lyagushenko',
+    'contacts.github.title': 'GitHub',
+    'contacts.github.handle': 'github.com/ilya-the-frog',
+    'contacts.twitter.title': 'Twitter',
+    'contacts.twitter.handle': 'x.com/ilya_the_frog',
+    'contacts.instagram.title': 'Instagram*',
+    'contacts.instagram.handle': '@ilya-the-frog*',
+    'contacts.email.title': 'Email',
+    'contacts.email.handle': 'ilya.the.frog@gmail.com',
+
+    'help.title': 'Чем могу помочь',
+    'help.consult.title': 'Консультации',
+    'help.consult.link': 'Записаться на консультацию',
+    'help.mentoring.title': 'Менторство',
+    'help.mentoring.link': 'Менторство по продукту',
+    'help.content.title': 'Контент',
+    'help.content.link': 'Канал «Путешествия глазами продакта»',
+
+    'speaker.title': 'Спикер',
+    'speaker.sirius.title': 'Сириус',
+    'speaker.sirius.link': 'Выступление',
+    'speaker.pm.title': 'Product&Marketing — про клиентов',
+    'speaker.pm.link': 'Выступление',
+
+    'projects.title': 'Проекты в свободное время',
+    'projects.channel.title': 'Telegram-канал',
+    'projects.channel.link': 'Путешествия глазами продакта',
+    'projects.bot.title': 'Бот',
+    'projects.bot.link': 'Киркоров (40k+ MAU)',
+
+    'publications.title': 'Публикации',
+    'publications.vc': 'Как вернуть клиентов без новых фич',
+    'publications.gopractice': 'От Макдоналдс до продакта',
+    'publications.support': 'Как продукту и поддержке наладить коммуникацию',
+    'publications.tj.tourist': 'Туристическая виза в Китай',
+    'publications.tj.transit': 'Транзитная виза в Китай',
+    'publications.yandex': 'Сдаю свою, живу в съёмной: история собственника',
+    'publications.tj.japan': 'Туристическая виза в Японию',
+    'publications.tj.volunteer': 'Добро: плюсы и минусы волонтёрства',
+    'publications.tj.laser': 'Лазерная коррекция зрения по купону',
+    'publications.tj.winner': 'Победитель',
+    'publications.smm.audience': 'ЦА проще, чем кажется',
+    'publications.smm.shortsight': 'Маркетинговая близорукость: что это и чем грозит',
+    'publications.smm.roles': 'Должности в digital-маркетинге',
+    'publications.smm.cosplay': 'Косплееры для пиарщиков и маркетологов',
+    'publications.smm.entertainment': 'Индустрия развлечений: TI2016 и финал LCL',
+
+    'resume.title': 'Резюме',
+    'resume.label': 'Резюме',
+    'resume.link': 'HH',
+
+    'skills.hard.title': 'Hard Skills',
+    'skills.hard.link': 'GoPractice — SAT Certificate',
+    'skills.soft.title': 'Soft Skills',
+    'skills.soft.link': 'Менторство/консультации (кейсы по запросу)',
+    'skills.note': '*Организация, деятельность которой запрещена на территории РФ',
+
+    'footer.cta': 'Подпишитесь на Telegram-канал!'
+  },
+  en: {
+    'header.title': 'Ilya Lyagushenko // Ilya Lyagushenko',
+    'header.subtitle': 'Product Manager | Fintech | Travel',
+    'about.title': 'About',
+    'about.summary.title': 'Summary',
+    'about.summary.text':
+      'B2C Product Manager with 5+ years in fintech (credit cards). I own churn reduction and retention growth. Led cross‑functional teams of engineers and analysts (BA/SA/PA) up to 15 people. Delivered executive-level initiatives and worked with many stakeholders. Initiatives I led generated several million USD in profit for T‑Bank in one year.',
+    'about.expertise.title': 'Expertise & achievement',
+    'about.expertise.text':
+      'Expertise: fintech and credit cards, retention, web and mobile product development, contractor/agent apps and self-service portals, banking product launches, UI/UX, and customer experience improvements.\nKey achievement: reduced T‑Bank credit card churn by 34% YoY across the funnel.',
+
+    'contacts.title': 'My contacts',
+    'contacts.telegram.title': 'Telegram',
+    'contacts.telegram.handle': '@travelasproduct',
+    'contacts.linkedin.title': 'LinkedIn',
+    'contacts.linkedin.handle': 'Ilya Lyagushenko',
+    'contacts.github.title': 'GitHub',
+    'contacts.github.handle': 'github.com/ilya-the-frog',
+    'contacts.twitter.title': 'Twitter',
+    'contacts.twitter.handle': 'x.com/ilya_the_frog',
+    'contacts.instagram.title': 'Instagram*',
+    'contacts.instagram.handle': '@ilya-the-frog*',
+    'contacts.email.title': 'Email',
+    'contacts.email.handle': 'ilya.the.frog@gmail.com',
+
+    'help.title': 'How can I help',
+    'help.consult.title': 'Consultations',
+    'help.consult.link': 'Book a consultation',
+    'help.mentoring.title': 'Mentoring',
+    'help.mentoring.link': 'Product mentoring',
+    'help.content.title': 'Content',
+    'help.content.link': 'Travel through a product manager\'s eyes',
+
+    'speaker.title': 'Speaker',
+    'speaker.sirius.title': 'Sirius',
+    'speaker.sirius.link': 'Talk',
+    'speaker.pm.title': 'Product&Marketing — about customers',
+    'speaker.pm.link': 'Talk',
+
+    'projects.title': 'Side projects',
+    'projects.channel.title': 'Telegram channel',
+    'projects.channel.link': 'Travel through a product manager\'s eyes',
+    'projects.bot.title': 'Bot',
+    'projects.bot.link': 'Kirkorov (40k+ MAU)',
+
+    'publications.title': 'Publications',
+    'publications.vc': 'How to win back customers without new features',
+    'publications.gopractice': 'From McDonald\'s to Product',
+    'publications.support': 'How product and support can build better communication',
+    'publications.tj.tourist': 'China tourist visa',
+    'publications.tj.transit': 'China transit visa',
+    'publications.yandex': 'Renting out my apartment while living in a rental',
+    'publications.tj.japan': 'Japan tourist visa',
+    'publications.tj.volunteer': 'Good: volunteering pros and cons',
+    'publications.tj.laser': 'Laser vision correction with a coupon',
+    'publications.tj.winner': 'Winner',
+    'publications.smm.audience': 'Your target audience is easier to reach than you think',
+    'publications.smm.shortsight': 'Marketing shortsightedness: what it is and how it threatens your brand',
+    'publications.smm.roles': 'Roles in digital marketing',
+    'publications.smm.cosplay': 'Cosplayers for PR and marketing professionals',
+    'publications.smm.entertainment': 'Entertainment industry: TI2016 and the LoL Continental League final',
+
+    'resume.title': 'My resume',
+    'resume.label': 'Resume',
+    'resume.link': 'HH',
+
+    'skills.hard.title': 'Hard Skills',
+    'skills.hard.link': 'GoPractice — SAT Certificate',
+    'skills.soft.title': 'Soft Skills',
+    'skills.soft.link': 'Mentoring/Consultations (examples & cases on request)',
+    'skills.note': '*Organization whose activities are prohibited in the Russian Federation',
+
+    'footer.cta': 'Subscribe to the Telegram channel!'
+  }
+};
+
+function detectBrowserLang() {
+  const navLang = navigator.language || navigator.userLanguage || '';
+  const short = navLang.slice(0, 2).toLowerCase();
+  return SUPPORTED.includes(short) ? short : FALLBACK_LANG;
+}
+
+function getInitialLang() {
+  const saved = localStorage.getItem(LANG_KEY);
+  if (saved && SUPPORTED.includes(saved)) return saved;
+  return detectBrowserLang();
+}
+
+function applyTranslations(lang) {
+  const dict = translations[lang] || translations[FALLBACK_LANG];
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach((node) => {
+    const key = node.getAttribute('data-i18n');
+    if (dict[key]) {
+      node.innerHTML = dict[key].replace(/\n/g, '<br />');
+    }
+  });
+
+  document
+    .querySelectorAll('[data-lang-btn]')
+    .forEach((btn) => btn.classList.toggle('lang-toggle__btn--active', btn.dataset.langBtn === lang));
+}
+
+function setLang(lang) {
+  const next = SUPPORTED.includes(lang) ? lang : FALLBACK_LANG;
+  localStorage.setItem(LANG_KEY, next);
+  applyTranslations(next);
+}
+
+function setupLangSwitcher() {
+  const initial = getInitialLang();
+  applyTranslations(initial);
+
+  document.querySelectorAll('[data-lang-btn]').forEach((btn) => {
+    btn.addEventListener('click', () => setLang(btn.dataset.langBtn));
+  });
+}
+
+document.addEventListener('DOMContentLoaded', setupLangSwitcher);
