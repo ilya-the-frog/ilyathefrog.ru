@@ -181,9 +181,9 @@ footer {
 
 /* Ссылки */
 .linsk__link {
-  color: #a370f0;
+  color: #1c4bff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.25s ease, text-decoration 0.25s ease;
   font-size: 14px;
   line-height: 1.35;
 
@@ -194,8 +194,13 @@ footer {
   gap: 10px;
 }
 
-.linsk__link:hover {
-  color: #7a4ccc;
+.linsk__link:visited {
+  color: #a370f0;
+}
+
+.linsk__link:hover,
+.linsk__link:focus-visible {
+  color: #0e2fd2;
   text-decoration: underline;
 }
 
