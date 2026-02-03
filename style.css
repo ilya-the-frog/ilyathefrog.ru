@@ -237,10 +237,16 @@ footer {
 }
 
 .links__body {
-  display: inline-flex;
+  flex: 1;
+  display: flex;
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.links__body .linsk__link {
+  flex: 1;
+  min-width: 0;
 }
 
 .links__date {
@@ -250,6 +256,7 @@ footer {
   padding: 4px 8px;
   border-radius: 10px;
   background-color: #f0eef8;
+  margin-left: auto;
 }
 
 .links__note {
