@@ -34,7 +34,7 @@ const translations = {
     'help.mentoring.title': 'Менторство',
     'help.mentoring.link': 'Менторство по продукту',
     'help.content.title': 'Контент',
-    'help.content.link': 'Канал «Путешествия глазами продакта»',
+    'help.content.link': 'Канал «Продакт поехал»',
 
     'speaker.title': 'Спикер',
     'speaker.sirius.title': 'Сириус',
@@ -44,7 +44,7 @@ const translations = {
 
     'projects.title': 'Проекты в свободное время',
     'projects.channel.title': 'Telegram-канал',
-    'projects.channel.link': 'Путешествия глазами продакта',
+    'projects.channel.link': 'Продакт поехал',
     'projects.bot.title': 'Бот',
     'projects.bot.link': 'Киркоров (40k+ MAU)',
 
@@ -114,7 +114,7 @@ const translations = {
     'help.mentoring.title': 'Mentoring',
     'help.mentoring.link': 'Product mentoring',
     'help.content.title': 'Content',
-    'help.content.link': 'Travel through a product manager\'s eyes',
+    'help.content.link': 'Product Gone',
 
     'speaker.title': 'Speaker',
     'speaker.sirius.title': 'Sirius',
@@ -124,7 +124,7 @@ const translations = {
 
     'projects.title': 'Side projects',
     'projects.channel.title': 'Telegram channel',
-    'projects.channel.link': 'Product gone',
+    'projects.channel.link': 'Product Gone',
     'projects.bot.title': 'Bot',
     'projects.bot.link': 'Kirkorov (40k+ MAU)',
 
