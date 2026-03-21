@@ -55,8 +55,8 @@ const translations = {
     'publications.svpressa.publisher': 'Свободная Пресса',
     'publications.svpressa':
       'Илья Лягушенко: «Я смотрю на системное мышление — может ли человек видеть связь между своей работой и целью бизнеса»',
-    'publications.elibrary.publisher': 'eLIBRARY.RU',
-    'publications.elibrary': 'ВЛИЯНИЕ LLM-АССИСТЕНТОВ НА СНИЖЕНИЕ ОПЕРАЦИОННОЙ НАГРУЗКИ В КОНТАКТ-ЦЕНТРАХ РОССИЙСКИХ БАНКОВ',
+    'publications.elibrary.publisher': 'Финансовый бизнес',
+    'publications.elibrary': 'Влияние LLM-ассистентов на снижение операционной нагрузки в контакт-центрах российских банков',
     'publications.innovazia.publisher': 'Инновации и инвестиции',
     'publications.innovazia': 'Стратегии перехода на отечественные операционные системы в ИТ-инфраструктуре банков',
     'publications.aif.publisher': 'Аргументы и Факты',
@@ -142,8 +142,8 @@ const translations = {
     'publications.svpressa.publisher': 'Svobodnaya Pressa',
     'publications.svpressa':
       'Ilya Lyagushenko: “I look at systems thinking: can a person see the connection between their work and the business goal?”',
-    'publications.elibrary.publisher': 'eLIBRARY.RU',
-    'publications.elibrary': 'THE IMPACT OF LLM ASSISTANTS ON REDUCING OPERATIONAL WORKLOAD IN CONTACT CENTERS OF RUSSIAN BANKS',
+    'publications.elibrary.publisher': 'Finance and Business',
+    'publications.elibrary': 'The impact of LLM assistants on reducing operational workload in contact centers of Russian banks',
     'publications.innovazia.publisher': 'Innovations and Investments',
     'publications.innovazia': 'Strategies for the transition to domestic operating systems in the IT infrastructure of banks',
     'publications.aif.publisher': 'Arguments and Facts',
