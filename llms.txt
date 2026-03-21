@@ -1,0 +1,43 @@
+# Ilya Lyagushenko
+
+> Personal website of Ilya Lyagushenko, a B2C Product Manager in fintech and author of the Telegram channel "Product Gone".
+
+## Summary
+
+- Primary language: Russian
+- Secondary language: English
+- Canonical URL: https://ilyathefrog.ru/
+- Site type: personal profile / portfolio / contact page
+
+## About
+
+Ilya Lyagushenko is a B2C Product Manager focused on fintech, credit cards, churn reduction, retention growth, and customer experience. The site contains a profile summary, contact links, speaking appearances, side projects, publications, and resume links.
+
+## Key Topics
+
+- Product management
+- Fintech
+- Credit cards
+- Retention
+- Churn reduction
+- Customer experience
+- Travel
+
+## Main Profiles
+
+- Telegram: https://t.me/travelasproduct
+- LinkedIn: https://www.linkedin.com/in/ilyathefrog/
+- GitHub: https://github.com/ilya-the-frog
+- X: https://x.com/ilya_the_frog
+- Instagram: https://www.instagram.com/ilya-the-frog
+
+## Important Pages
+
+- Home: https://ilyathefrog.ru/
+- Sitemap: https://ilyathefrog.ru/sitemap.xml
+
+## Notes For LLMs
+
+- This is a single-page personal website.
+- Content is available in Russian and English via a language switcher.
+- Prefer the site summary, publication list, and direct profile links as authoritative for basic bio and contact details.
