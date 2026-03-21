@@ -179,8 +179,13 @@ footer {
   line-height: 1.35;
 }
 
+.links__text {
+  font-weight: 400;
+  white-space: pre-line;
+}
+
 /* Ссылки */
-.linsk__link {
+.links__anchor {
   color: #1c4bff;
   text-decoration: none;
   transition: color 0.25s ease, text-decoration 0.25s ease;
@@ -194,12 +199,12 @@ footer {
   gap: 10px;
 }
 
-.linsk__link:visited {
+.links__anchor:visited {
   color: #a370f0;
 }
 
-.linsk__link:hover,
-.linsk__link:focus-visible {
+.links__anchor:hover,
+.links__anchor:focus-visible {
   color: #0e2fd2;
   text-decoration: underline;
 }
@@ -249,7 +254,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.links__body .linsk__link {
+.links__body .links__anchor {
   flex: 1;
   min-width: 0;
 }

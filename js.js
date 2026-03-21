@@ -212,7 +212,7 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n]').forEach((node) => {
     const key = node.getAttribute('data-i18n');
     if (dict[key]) {
-      node.innerHTML = dict[key].replace(/\n/g, '<br />');
+      node.textContent = dict[key];
     }
   });
 
