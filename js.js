@@ -29,8 +29,8 @@ const translations = {
     'contacts.email.handle': 'ilya.the.frog@gmail.com',
 
     'help.title': 'Чем могу помочь',
-    'help.consult.title': 'Консультации',
-    'help.consult.link': 'Записаться на консультацию',
+    'help.consult.title': 'Консультирую',
+    'help.consult.link': 'По поводу карьеры и куда съездить в путешествие',
     'help.mentoring.title': 'Менторство',
     'help.mentoring.link': 'Менторство по продукту',
     'help.content.title': 'Контент',
@@ -57,7 +57,7 @@ const translations = {
     'publications.support': 'Как продукту и поддержке наладить коммуникацию',
     'publications.svpressa.publisher': 'Свободная Пресса',
     'publications.svpressa':
-      'Илья Лягушенко: «Я смотрю на системное мышление — может ли человек видеть связь между своей работой и целью бизнеса»',
+      'Я смотрю на системное мышление — может ли человек видеть связь между своей работой и целью бизнеса',
     'publications.elibrary.publisher': 'Финансовый бизнес',
     'publications.elibrary': 'Влияние LLM-ассистентов на снижение операционной нагрузки в контакт-центрах российских банков',
     'publications.innovazia.publisher': 'Инновации и инвестиции',
@@ -65,7 +65,7 @@ const translations = {
     'publications.aif.publisher': 'Аргументы и Факты',
     'publications.aif': 'Продуктовое чутье. Лягушенко: как за цифрами увидеть потребности клиента',
     'publications.kp.publisher': 'KP.RU',
-    'publications.kp': 'Илья Лягушенко: "Внутренний предприниматель - это не должность, а образ мышления"',
+    'publications.kp': 'Внутренний предприниматель - это не должность, а образ мышления',
     'publications.tj.tourist': 'Туристическая виза в Китай',
     'publications.tj.transit': 'Транзитная виза в Китай',
     'publications.yandex.title': 'Яндекс Недвижимость',
@@ -80,16 +80,6 @@ const translations = {
     'publications.smm.cosplay': 'Косплееры для пиарщиков и маркетологов',
     'publications.smm.entertainment': 'Индустрия развлечений: TI2016 и финал LCL',
     'publications.smm.myopia': 'Маркетинговая близорукость — что это и чем она грозит фирме',
-
-    'resume.title': 'Резюме',
-    'resume.label': 'Резюме',
-    'resume.link': 'HH',
-
-    'skills.hard.title': 'Hard Skills',
-    'skills.hard.link': 'GoPractice — SAT Certificate',
-    'skills.soft.title': 'Soft Skills',
-    'skills.soft.link': 'Менторство/консультации (кейсы по запросу)',
-    'skills.note': '*Организация, деятельность которой запрещена на территории РФ',
 
     'footer.cta': 'Подпишитесь на Telegram-канал!'
   },
@@ -119,8 +109,8 @@ const translations = {
     'contacts.email.handle': 'ilya.the.frog@gmail.com',
 
     'help.title': 'How can I help',
-    'help.consult.title': 'Consultations',
-    'help.consult.link': 'Book a consultation',
+    'help.consult.title': 'Consulting',
+    'help.consult.link': 'Career advice and travel destination recommendations',
     'help.mentoring.title': 'Mentoring',
     'help.mentoring.link': 'Product mentoring',
     'help.content.title': 'Content',
@@ -147,7 +137,7 @@ const translations = {
     'publications.support': 'How product and support can build better communication',
     'publications.svpressa.publisher': 'Svobodnaya Pressa',
     'publications.svpressa':
-      'Ilya Lyagushenko: “I look at systems thinking: can a person see the connection between their work and the business goal?”',
+      'I look at systems thinking: can a person see the connection between their work and the business goal?',
     'publications.elibrary.publisher': 'Finance and Business',
     'publications.elibrary': 'The impact of LLM assistants on reducing operational workload in contact centers of Russian banks',
     'publications.innovazia.publisher': 'Innovations and Investments',
@@ -155,7 +145,7 @@ const translations = {
     'publications.aif.publisher': 'Arguments and Facts',
     'publications.aif': 'Product intuition. Lyagushenko: how to see customer needs behind the numbers',
     'publications.kp.publisher': 'KP.RU',
-    'publications.kp': 'Ilya Lyagushenko: "Internal entrepreneur is not a position, but a mindset"',
+    'publications.kp': 'Internal entrepreneur is not a position, but a mindset',
     'publications.tj.tourist': 'China tourist visa',
     'publications.tj.transit': 'China transit visa',
     'publications.yandex.title': 'Yandex Real Estate',
@@ -170,16 +160,6 @@ const translations = {
     'publications.smm.cosplay': 'Cosplayers for PR and marketing professionals',
     'publications.smm.entertainment': 'Entertainment industry: TI2016 and the LoL Continental League final',
     'publications.smm.myopia': 'Marketing myopia — what it is and what it threatens the firm',
-
-    'resume.title': 'My resume',
-    'resume.label': 'Resume',
-    'resume.link': 'HH',
-
-    'skills.hard.title': 'Hard Skills',
-    'skills.hard.link': 'GoPractice — SAT Certificate',
-    'skills.soft.title': 'Soft Skills',
-    'skills.soft.link': 'Mentoring/Consultations (examples & cases on request)',
-    'skills.note': '*Organization whose activities are prohibited in the Russian Federation',
 
     'footer.cta': 'Subscribe to the Telegram channel!'
   }
