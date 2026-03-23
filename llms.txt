@@ -35,6 +35,7 @@ Ilya Lyagushenko is a B2C Product Manager focused on fintech, credit cards, chur
 
 - Home: https://ilyathefrog.ru/
 - Sitemap: https://ilyathefrog.ru/sitemap.xml
+- ComNews - It is easy to change the interface; it is harder to change what stands behind it: https://www.comnews.ru/content/244344/2026-03-23/2026-w13/1013/prodakt-lider-ilya-lyagushenko-interfeys-pomenyat-legko-slozhnee-izmenit-chto-za-nim-stoit
 - Svobodnaya Pressa - Systems thinking interview: https://svpressa.ru/business/article/502040/
 - Finance and Business - LLM assistants in Russian bank contact centers: https://elibrary.ru/item.asp?id=88739644
 - Innovations and Investments - Domestic operating systems in banks: https://innovazia.ru/archive/65742/
