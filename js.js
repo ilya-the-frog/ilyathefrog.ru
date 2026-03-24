@@ -25,6 +25,8 @@ const translations = {
     'contacts.twitter.handle': 'x.com/ilya_the_frog',
     'contacts.instagram.title': 'Instagram*',
     'contacts.instagram.handle': '@ilya-the-frog*',
+    'contacts.instagram.note':
+      '* Instagram запрещен в России; принадлежит Meta, признанной экстремистской организацией в РФ.',
     'contacts.email.title': 'Email',
     'contacts.email.handle': 'ilya.the.frog@gmail.com',
 
@@ -105,6 +107,8 @@ const translations = {
     'contacts.twitter.handle': 'x.com/ilya_the_frog',
     'contacts.instagram.title': 'Instagram*',
     'contacts.instagram.handle': '@ilya-the-frog*',
+    'contacts.instagram.note':
+      '* Instagram is banned in Russia; Meta is recognized as an extremist organization in the Russian Federation.',
     'contacts.email.title': 'Email',
     'contacts.email.handle': 'ilya.the.frog@gmail.com',
 
