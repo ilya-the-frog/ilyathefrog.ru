@@ -45,6 +45,8 @@ const translations = {
     'speaker.sirius.link': 'Выступление',
     'speaker.pm.title': 'Product&Marketing — про клиентов',
     'speaker.pm.link': 'Выступление',
+    'speaker.jobsearch.title': 'Как увеличить свою заметность на рынке труда',
+    'speaker.jobsearch.link': 'Выступление',
 
     'projects.title': 'Проекты в свободное время',
     'projects.channel.title': 'Telegram-канал',
@@ -133,6 +135,8 @@ const translations = {
     'speaker.sirius.link': 'Talk',
     'speaker.pm.title': 'Product&Marketing — about customers',
     'speaker.pm.link': 'Talk',
+    'speaker.jobsearch.title': 'How to increase your visibility in the job market',
+    'speaker.jobsearch.link': 'Talk',
 
     'projects.title': 'Side projects',
     'projects.channel.title': 'Telegram channel',
