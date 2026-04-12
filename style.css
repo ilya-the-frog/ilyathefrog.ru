@@ -234,6 +234,12 @@ footer {
   fill: #0a0a0a;
 }
 
+.link-logo--dzen img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
 .link-logo--linkedin svg {
   fill: #265cff;
 }
