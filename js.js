@@ -1,18 +1,56 @@
 const LANG_KEY = 'preferred_lang_v1';
 const FALLBACK_LANG = 'en';
 const SUPPORTED = ['ru', 'en'];
+const IT_CAREER_START = { year: 2019, monthIndex: 1, day: 6 };
 
 const translations = {
   ru: {
     'header.title': 'Илья Лягушенко // Ilya Lyagushenko',
-    'header.subtitle': 'Продакт-менеджер | Финтех | Путешествия',
+    'header.subtitle': 'Продакт в финтехе: retention, churn, рост доходности и CX.',
     'about.title': 'Обо мне',
-    'about.summary.title': 'Кратко о себе',
-    'about.summary.text':
-      'B2C Product Manager c опытом более 5 лет в финтехе (кредитные карты): отвечаю за снижение churn/рост удержания. Руководил кросс функциональными командами разработчиков и аналитиков до 15 человек (BA/SA/PA). Работал над приоритетными для C-level проектами и с большим количеством stakeholder’ов. Инициативы под моим управлением принесли Т-Банку более 400 миллионов прибыли за год.',
-    'about.expertise.title': 'Экспертиза и достижения',
-    'about.expertise.text':
-      'Обладаю экспертизой в следующих областях: финтех и кредитные карты, удержание пользователей, веб и мобильная разработка, приложения и ЛК для исполнителей, запуск банковских продуктов, проектирование интерфейсов и улучшения клиентского опыта.\nСвоим главным достижением считаю снижение оттока на кредитных карт в T-Банке на 34% по всей воронке YoY.',
+    'about.lead':
+      'Я вырос из поддержки и клиентского опыта в продукт, поэтому умею не только смотреть на графики, но и понимать, какая реальная боль клиента стоит за цифрами.',
+    'about.body.before': 'Работал в Рокетбанке, Яндексе и Т-Банке, сейчас — менеджер продукта в ',
+    'about.body.company': 'karta.io',
+    'about.body.after':
+      '. Специализируюсь на финтехе, кредитных картах, удержании и клиентских сценариях, где результат влияет и на опыт клиента, и на экономику продукта.',
+    'about.public.before':
+      'О продукте, клиентском опыте и сервисных сценариях я пишу и говорю публично: мои материалы выходили в отраслевых и федеральных СМИ, некоторые тексты публиковались в научных изданиях, а профессиональные результаты были отмечены наградой ',
+    'about.public.award': 'Best Business Awards',
+    'about.public.after': '.',
+    'about.note':
+      'Путешествия для меня — не отдельная тема рядом с работой, а источник насмотренности: мне интересно замечать, как сервисы устроены в деталях и почему люди к ним возвращаются или уходят.',
+    'about.proof.churn.value': '34%',
+    'about.proof.churn.label': 'снижение оттока YoY',
+    'about.proof.impact.value': '₽400M+',
+    'about.proof.impact.label': 'годовой эффект',
+    'about.proof.experience.value': '7+',
+    'about.proof.experience.label': 'лет в IT',
+    'about.proof.team.value': 'Команды',
+    'about.proof.team.label': 'до 15 человек',
+    'about.focus.label': 'Фокус',
+    'about.focus.fintech.title': 'Финтех и карты',
+    'about.focus.fintech.text':
+      'B2C-продукты, кредитные карты, экономика продукта и сервисные сценарии вокруг них.',
+    'about.focus.retention.title': 'Отток',
+    'about.focus.retention.text':
+      'Удержание, реактивация, возврат клиентов и проверка гипотез через метрики и эксперименты.',
+    'about.focus.cx.title': 'Из поддержки в продукт',
+    'about.focus.cx.text':
+      'Переношу опыт поддержки и клиентского сервиса в продуктовые решения, процессы и интерфейсы.',
+    'about.focus.leadership.title': 'Собираю команды вокруг решения',
+    'about.focus.leadership.text':
+      'Соединяю бизнес, аналитику, разработку и клиентский опыт в одно решение. Умею договариваться между функциями и двигать сложные инициативы вперед.',
+    'about.audience.label': 'Для кого я полезен',
+    'about.audience.companies.title': 'Компаниям',
+    'about.audience.companies.text':
+      'Продукт, удержание, клиентский опыт и сервисные улучшения с ощутимым бизнес-эффектом.',
+    'about.audience.people.title': 'Людям',
+    'about.audience.people.text':
+      'Карьерные консультации, менторство по продукту и помощь с переходом в профессию.',
+    'about.audience.media.title': 'Конференциям и медиа',
+    'about.audience.media.text':
+      'Выступления, интервью и колонки про продукт, retention, системное мышление и клиентский опыт.',
 
     'contacts.title': 'Контакты',
     'contacts.telegram.title': 'Telegram',
@@ -95,14 +133,51 @@ const translations = {
   },
   en: {
     'header.title': 'Ilya Lyagushenko // Илья Лягушенко',
-    'header.subtitle': 'Product Manager | Fintech | Travel',
+    'header.subtitle': 'Fintech Product Manager: retention, churn, profitability growth, and CX.',
     'about.title': 'About',
-    'about.summary.title': 'Summary',
-    'about.summary.text':
-      'B2C Product Manager with 5+ years in fintech (credit cards). I own churn reduction and retention growth. Led cross‑functional teams of engineers and analysts (BA/SA/PA) up to 15 people. Delivered executive-level initiatives and worked with many stakeholders. Initiatives I led generated several million USD in profit for T‑Bank in one year.',
-    'about.expertise.title': 'Expertise & achievement',
-    'about.expertise.text':
-      'Expertise: fintech and credit cards, retention, web and mobile product development, contractor/agent apps and self-service portals, banking product launches, UI/UX, and customer experience improvements.\nKey achievement: reduced T‑Bank credit card churn by 34% YoY across the funnel.',
+    'about.lead':
+      'I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain behind the numbers.',
+    'about.body.before': 'I worked at Rocketbank, Yandex, and T-Bank, and now I am a product manager at ',
+    'about.body.company': 'karta.io',
+    'about.body.after':
+      '. I focus on fintech, credit cards, retention, and customer journeys where the outcome affects both customer experience and product economics.',
+    'about.public.before':
+      'I write and speak publicly about product, customer experience, and service journeys: my work has appeared in industry and national media, some texts were published in research journals, and my professional results were recognized by ',
+    'about.public.award': 'Best Business Awards',
+    'about.public.after': '.',
+    'about.note':
+      'Travel is not a separate theme next to work for me — it sharpens my product sense. I am interested in noticing how services are built in detail and why people come back to them or leave.',
+    'about.proof.churn.value': '34%',
+    'about.proof.churn.label': 'churn reduction YoY',
+    'about.proof.impact.value': 'RUB 400M+',
+    'about.proof.impact.label': 'annual impact',
+    'about.proof.experience.value': '7+',
+    'about.proof.experience.label': 'years in IT',
+    'about.proof.team.value': 'Teams',
+    'about.proof.team.label': 'up to 15 people',
+    'about.focus.label': 'Focus',
+    'about.focus.fintech.title': 'Fintech & cards',
+    'about.focus.fintech.text':
+      'B2C products, credit cards, product economics, and the service journeys around them.',
+    'about.focus.retention.title': 'Retention & churn',
+    'about.focus.retention.text':
+      'Retention, reactivation, win-back mechanics, and hypothesis validation through metrics and experiments.',
+    'about.focus.cx.title': 'CX & support to product',
+    'about.focus.cx.text':
+      'I translate support and customer service experience into product decisions, processes, and interfaces.',
+    'about.focus.leadership.title': 'Building teams around the solution',
+    'about.focus.leadership.text':
+      'I bring business, analytics, engineering, and customer experience into one solution. I know how to align functions and move complex initiatives forward.',
+    'about.audience.label': 'Useful for',
+    'about.audience.companies.title': 'Companies',
+    'about.audience.companies.text':
+      'Product, retention, customer experience, and service improvements with measurable business impact.',
+    'about.audience.people.title': 'People',
+    'about.audience.people.text':
+      'Career advice, product mentoring, and help with switching into the profession.',
+    'about.audience.media.title': 'Conferences & media',
+    'about.audience.media.text':
+      'Talks, interviews, and columns about product, retention, systems thinking, and customer experience.',
 
     'contacts.title': 'My contacts',
     'contacts.telegram.title': 'Telegram',
@@ -227,6 +302,7 @@ function applyTranslations(lang) {
     .forEach((btn) => btn.classList.toggle('lang-toggle__btn--active', btn.dataset.langBtn === lang));
 
   updatePublicationDates(lang);
+  updateExperienceCounter();
 }
 
 function setLang(lang) {
@@ -270,6 +346,28 @@ function updatePublicationDates(lang) {
     const formatted = formatDate(iso, lang);
     dateNode.textContent = formatted || '';
     dateNode.style.display = formatted ? 'inline-flex' : 'none';
+  });
+}
+
+function getYearsInIT() {
+  const now = new Date();
+  let years = now.getFullYear() - IT_CAREER_START.year;
+
+  const anniversaryPassed =
+    now.getMonth() > IT_CAREER_START.monthIndex ||
+    (now.getMonth() === IT_CAREER_START.monthIndex && now.getDate() >= IT_CAREER_START.day);
+
+  if (!anniversaryPassed) {
+    years -= 1;
+  }
+
+  return `${Math.max(years, 0)}+`;
+}
+
+function updateExperienceCounter() {
+  const years = getYearsInIT();
+  document.querySelectorAll('[data-it-years]').forEach((node) => {
+    node.textContent = years;
   });
 }
 

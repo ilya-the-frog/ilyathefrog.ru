@@ -1,6 +1,6 @@
 # Ilya Lyagushenko
 
-> Personal website of Ilya Lyagushenko, a B2C Product Manager in fintech and author of the Telegram channel "Product Gone".
+> Personal website of Ilya Lyagushenko, a fintech product manager focused on retention, churn, profitability growth, customer experience, and service journeys.
 
 ## Summary
 
@@ -11,7 +11,7 @@
 
 ## About
 
-Ilya Lyagushenko is a B2C Product Manager focused on fintech, credit cards, churn reduction, retention growth, and customer experience. The site contains a profile summary, contact links, speaking appearances, side projects, publications, and resume links.
+Ilya Lyagushenko is a fintech product manager focused on credit cards, retention, churn, profitability growth, customer experience, and service journeys. Public profiles also describe his path from customer support into product management, his work at Rocketbank, Yandex, and T-Bank, and his current role at karta.io. He writes and speaks publicly about product, customer experience, and service journeys; his work has appeared in industry and federal media, some texts were published in research journals, and his professional results were recognized by Best Business Awards. The site contains a profile summary, contact links, speaking appearances, side projects, publications, and public writing about product work, careers, and travel.
 
 ## Key Topics
 
@@ -20,7 +20,11 @@ Ilya Lyagushenko is a B2C Product Manager focused on fintech, credit cards, chur
 - Credit cards
 - Retention
 - Churn reduction
+- Profitability growth
 - Customer experience
+- Service journeys
+- Customer support to product
+- Public writing and speaking
 - Travel
 
 ## Main Profiles
@@ -65,3 +69,4 @@ Ilya Lyagushenko is a B2C Product Manager focused on fintech, credit cards, chur
 - This is a single-page personal website.
 - Content is available in Russian and English via a language switcher.
 - Prefer the site summary, publication list, and direct profile links as authoritative for basic bio and contact details.
+- The profile positioning emphasizes support-to-product career growth, fintech retention/churn work, profitability growth, and public writing/speaking.
