@@ -6,10 +6,10 @@ const IT_CAREER_START = { year: 2019, monthIndex: 1, day: 6 };
 const translations = {
   ru: {
     'header.title': 'Илья Лягушенко // Ilya Lyagushenko',
-    'header.subtitle': 'Продакт в финтехе: retention, churn, рост доходности и CX.',
+    'header.subtitle': 'Продакт в финтехе: retention, churn, рост доходности и CX',
     'about.title': 'Обо мне',
     'about.lead':
-      'Я вырос из поддержки и клиентского опыта в продукт, поэтому умею не только смотреть на графики, но и понимать, какая реальная боль клиента стоит за цифрами.',
+      'Я вырос из поддержки и клиентского опыта в продукт, поэтому умею не только смотреть на графики, но и понимать, какая реальная боль клиента стоит за цифрами',
     'about.body.before': 'Работал в Рокетбанке, Яндексе и Т-Банке, сейчас — менеджер продукта в ',
     'about.body.company': 'karta.io',
     'about.body.after':
@@ -19,38 +19,38 @@ const translations = {
     'about.public.award': 'Best Business Awards',
     'about.public.after': '.',
     'about.note':
-      'Путешествия для меня — не отдельная тема рядом с работой, а источник насмотренности: мне интересно замечать, как сервисы устроены в деталях и почему люди к ним возвращаются или уходят.',
+      'Путешествия для меня — не отдельная тема рядом с работой, а источник насмотренности: мне интересно замечать, как сервисы устроены в деталях и почему люди к ним возвращаются или уходят',
     'about.proof.churn.value': '34%',
     'about.proof.churn.label': 'снижение оттока YoY',
     'about.proof.impact.value': '₽400M+',
     'about.proof.impact.label': 'годовой эффект',
     'about.proof.experience.value': '7+',
     'about.proof.experience.label': 'лет в IT',
-    'about.proof.team.value': 'Команды',
-    'about.proof.team.label': 'до 15 человек',
+    'about.proof.team.value': 'до 15',
+    'about.proof.team.label': 'человек в команде',
     'about.focus.label': 'Фокус',
     'about.focus.fintech.title': 'Финтех и карты',
     'about.focus.fintech.text':
-      'B2C-продукты, кредитные карты, экономика продукта и сервисные сценарии вокруг них.',
+      'B2C-продукты, кредитные карты, экономика продукта и сервисные сценарии вокруг них',
     'about.focus.retention.title': 'Отток',
     'about.focus.retention.text':
-      'Удержание, реактивация, возврат клиентов и проверка гипотез через метрики и эксперименты.',
+      'Удержание, реактивация, возврат клиентов и проверка гипотез через метрики и эксперименты',
     'about.focus.cx.title': 'Из поддержки в продукт',
     'about.focus.cx.text':
-      'Переношу опыт поддержки и клиентского сервиса в продуктовые решения, процессы и интерфейсы.',
+      'Переношу опыт поддержки и клиентского сервиса в продуктовые решения, процессы и интерфейсы',
     'about.focus.leadership.title': 'Собираю команды вокруг решения',
     'about.focus.leadership.text':
-      'Соединяю бизнес, аналитику, разработку и клиентский опыт в одно решение. Умею договариваться между функциями и двигать сложные инициативы вперед.',
+      'Соединяю бизнес, аналитику, разработку и клиентский опыт в одно решение. Умею договариваться между функциями и двигать сложные инициативы вперед',
     'about.audience.label': 'Для кого я полезен',
     'about.audience.companies.title': 'Компаниям',
     'about.audience.companies.text':
-      'Продукт, удержание, клиентский опыт и сервисные улучшения с ощутимым бизнес-эффектом.',
+      'Продукт, удержание, клиентский опыт и сервисные улучшения с ощутимым бизнес-эффектом',
     'about.audience.people.title': 'Людям',
     'about.audience.people.text':
-      'Карьерные консультации, менторство по продукту и помощь с переходом в профессию.',
+      'Карьерные консультации, менторство по продукту и помощь с переходом в профессию',
     'about.audience.media.title': 'Конференциям и медиа',
     'about.audience.media.text':
-      'Выступления, интервью и колонки про продукт, retention, системное мышление и клиентский опыт.',
+      'Выступления, интервью и колонки про продукт, retention, системное мышление и клиентский опыт',
 
     'contacts.title': 'Контакты',
     'contacts.telegram.title': 'Telegram',
@@ -86,11 +86,23 @@ const translations = {
     'speaker.jobsearch.title': 'Как увеличить свою заметность на рынке труда',
     'speaker.jobsearch.link': 'Выступление',
 
-    'projects.title': 'Проекты в свободное время',
-    'projects.channel.title': 'Telegram-канал',
-    'projects.channel.link': 'Продакт поехал',
-    'projects.bot.title': 'Бот',
-    'projects.bot.link': 'Киркоров (40k+ MAU)',
+    'projects.title': 'Вне работы',
+    'projects.intro':
+      'Путешествия для меня — не отдых от продукта, а способ смотреть, как сервисы работают в реальной жизни. Я люблю фиксировать маршруты, собирать статистику поездок и превращать наблюдения в контент и side projects',
+    'projects.travel.label': 'Путешествия',
+    'projects.travel.channel.title': 'Продакт поехал / Travel as Product',
+    'projects.travel.channel.text': 'Канал о путешествиях, продуктах и сервисах в реальном мире',
+    'projects.travel.nomad.title': 'NomadMania',
+    'projects.travel.nomad.text': 'Моя карта поездок и география посещённых мест',
+    'projects.travel.nomad.note': 'Что это?',
+    'projects.travel.myfr.title': 'MyFR24',
+    'projects.travel.myfr.text': 'История моих перелётов и авиационная статистика',
+    'projects.meta.github': 'GitHub',
+    'projects.side.label': 'Side projects',
+    'projects.side.site.title': 'ilyathefrog.ru',
+    'projects.side.site.text': 'Этот сайт и его исходный код',
+    'projects.side.bot.title': 'Kirkorov',
+    'projects.side.bot.text': 'Telegram-бот с 40k+ MAU',
 
     'publications.title': 'Публикации',
     'publications.comnews.publisher': 'ComNews',
@@ -133,10 +145,10 @@ const translations = {
   },
   en: {
     'header.title': 'Ilya Lyagushenko // Илья Лягушенко',
-    'header.subtitle': 'Fintech Product Manager: retention, churn, profitability growth, and CX.',
+    'header.subtitle': 'Fintech Product Manager: retention, churn, profitability growth, and CX',
     'about.title': 'About',
     'about.lead':
-      'I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain behind the numbers.',
+      'I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain behind the numbers',
     'about.body.before': 'I worked at Rocketbank, Yandex, and T-Bank, and now I am a product manager at ',
     'about.body.company': 'karta.io',
     'about.body.after':
@@ -146,38 +158,38 @@ const translations = {
     'about.public.award': 'Best Business Awards',
     'about.public.after': '.',
     'about.note':
-      'Travel is not a separate theme next to work for me — it sharpens my product sense. I am interested in noticing how services are built in detail and why people come back to them or leave.',
+      'Travel is not a separate theme next to work for me — it sharpens my product sense. I am interested in noticing how services are built in detail and why people come back to them or leave',
     'about.proof.churn.value': '34%',
     'about.proof.churn.label': 'churn reduction YoY',
     'about.proof.impact.value': 'RUB 400M+',
     'about.proof.impact.label': 'annual impact',
     'about.proof.experience.value': '7+',
     'about.proof.experience.label': 'years in IT',
-    'about.proof.team.value': 'Teams',
-    'about.proof.team.label': 'up to 15 people',
+    'about.proof.team.value': 'Up to 15',
+    'about.proof.team.label': 'people on a team',
     'about.focus.label': 'Focus',
     'about.focus.fintech.title': 'Fintech & cards',
     'about.focus.fintech.text':
-      'B2C products, credit cards, product economics, and the service journeys around them.',
+      'B2C products, credit cards, product economics, and the service journeys around them',
     'about.focus.retention.title': 'Retention & churn',
     'about.focus.retention.text':
-      'Retention, reactivation, win-back mechanics, and hypothesis validation through metrics and experiments.',
+      'Retention, reactivation, win-back mechanics, and hypothesis validation through metrics and experiments',
     'about.focus.cx.title': 'CX & support to product',
     'about.focus.cx.text':
-      'I translate support and customer service experience into product decisions, processes, and interfaces.',
+      'I translate support and customer service experience into product decisions, processes, and interfaces',
     'about.focus.leadership.title': 'Building teams around the solution',
     'about.focus.leadership.text':
-      'I bring business, analytics, engineering, and customer experience into one solution. I know how to align functions and move complex initiatives forward.',
+      'I bring business, analytics, engineering, and customer experience into one solution. I know how to align functions and move complex initiatives forward',
     'about.audience.label': 'Useful for',
     'about.audience.companies.title': 'Companies',
     'about.audience.companies.text':
-      'Product, retention, customer experience, and service improvements with measurable business impact.',
+      'Product, retention, customer experience, and service improvements with measurable business impact',
     'about.audience.people.title': 'People',
     'about.audience.people.text':
-      'Career advice, product mentoring, and help with switching into the profession.',
+      'Career advice, product mentoring, and help with switching into the profession',
     'about.audience.media.title': 'Conferences & media',
     'about.audience.media.text':
-      'Talks, interviews, and columns about product, retention, systems thinking, and customer experience.',
+      'Talks, interviews, and columns about product, retention, systems thinking, and customer experience',
 
     'contacts.title': 'My contacts',
     'contacts.telegram.title': 'Telegram',
@@ -203,7 +215,7 @@ const translations = {
     'help.mentoring.title': 'Mentoring',
     'help.mentoring.link': 'Product mentoring',
     'help.content.title': 'Content',
-    'help.content.link': 'Product Gone',
+    'help.content.link': 'Travel as Product',
 
     'speaker.title': 'Speaker',
     'speaker.sirius.title': 'Sirius',
@@ -213,11 +225,23 @@ const translations = {
     'speaker.jobsearch.title': 'How to increase your visibility in the job market',
     'speaker.jobsearch.link': 'Talk',
 
-    'projects.title': 'Side projects',
-    'projects.channel.title': 'Telegram channel',
-    'projects.channel.link': 'Product Gone',
-    'projects.bot.title': 'Bot',
-    'projects.bot.link': 'Kirkorov (40k+ MAU)',
+    'projects.title': 'Beyond work',
+    'projects.intro':
+      'Travel is not separate from product thinking for me. It is one of the ways I study how services work in real life. I like tracking routes, collecting travel stats, and turning observations into content and side projects',
+    'projects.travel.label': 'Travel',
+    'projects.travel.channel.title': 'Travel as Product',
+    'projects.travel.channel.text': 'A channel about travel, products, and real-world service experience',
+    'projects.travel.nomad.title': 'NomadMania',
+    'projects.travel.nomad.text': 'My travel map and the geography of places I have visited',
+    'projects.travel.nomad.note': 'What is it?',
+    'projects.travel.myfr.title': 'MyFR24',
+    'projects.travel.myfr.text': 'My flight history and aviation stats',
+    'projects.meta.github': 'GitHub',
+    'projects.side.label': 'Side projects',
+    'projects.side.site.title': 'ilyathefrog.ru',
+    'projects.side.site.text': 'This site and its source code',
+    'projects.side.bot.title': 'Kirkorov',
+    'projects.side.bot.text': 'A Telegram bot with 40k+ MAU',
 
     'publications.title': 'Publications',
     'publications.comnews.publisher': 'ComNews',

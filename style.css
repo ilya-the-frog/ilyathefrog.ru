@@ -331,6 +331,50 @@ footer {
   color: #4f4f4f;
 }
 
+.projects__intro {
+  margin-bottom: 18px;
+}
+
+.projects__group + .projects__group {
+  margin-top: 22px;
+}
+
+.projects__anchor {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease, text-decoration 0.25s ease;
+}
+
+.projects__anchor:visited {
+  color: inherit;
+}
+
+.projects__anchor:hover,
+.projects__anchor:focus-visible {
+  color: #1c4bff;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.projects__meta-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #1c4bff;
+  text-decoration: none;
+}
+
+.projects__meta-link:visited {
+  color: #a370f0;
+}
+
+.projects__meta-link:hover,
+.projects__meta-link:focus-visible {
+  color: #0e2fd2;
+  text-decoration: underline;
+}
+
 /* Ссылки */
 .links__anchor {
   color: #1c4bff;
