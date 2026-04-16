@@ -40,6 +40,7 @@ Ilya Lyagushenko is a fintech product manager focused on credit cards, retention
 - Home: https://ilyathefrog.ru/
 - Sitemap: https://ilyathefrog.ru/sitemap.xml
 - ComNews - It is easy to change the interface; it is harder to change what stands behind it: https://www.comnews.ru/content/244344/2026-03-23/2026-w13/1013/prodakt-lider-ilya-lyagushenko-interfeys-pomenyat-legko-slozhnee-izmenit-chto-za-nim-stoit
+- Habr - How leaders can stay effective in an unstable environment: insights from an offline meetup: https://habr.com/ru/companies/cleverpumpkin/articles/1011208/
 - Svobodnaya Pressa - Systems thinking interview: https://svpressa.ru/business/article/502040/
 - Finance and Business - LLM assistants in Russian bank contact centers: https://elibrary.ru/item.asp?id=88739644
 - Innovations and Investments - Domestic operating systems in banks: https://innovazia.ru/archive/65742/

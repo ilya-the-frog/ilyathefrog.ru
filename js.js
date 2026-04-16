@@ -108,6 +108,8 @@ const translations = {
     'publications.comnews.publisher': 'ComNews',
     'publications.comnews':
       'Интерфейс поменять легко — сложнее изменить то, что за ним стоит',
+    'publications.habr.publisher': 'Хабр',
+    'publications.habr': 'Как руководителю сохранять эффективность в нестабильной среде: инсайты с офлайн-встречи',
     'publications.vc': 'Как вернуть клиентов без новых фич',
     'publications.gopractice': 'От Макдоналдс до продакта',
     'publications.support': 'Как продукту и поддержке наладить коммуникацию',
@@ -247,6 +249,8 @@ const translations = {
     'publications.comnews.publisher': 'ComNews',
     'publications.comnews':
       'It is easy to change the interface; it is harder to change what stands behind it',
+    'publications.habr.publisher': 'Habr',
+    'publications.habr': 'How leaders can stay effective in an unstable environment: insights from an offline meetup',
     'publications.vc': 'How to win back customers without new features',
     'publications.gopractice': 'From McDonald\'s to Product',
     'publications.support': 'How product and support can build better communication',
