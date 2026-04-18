@@ -150,7 +150,7 @@ const translations = {
     'header.subtitle': 'Fintech Product Manager: retention, churn, profitability growth, and CX',
     'about.title': 'About',
     'about.lead':
-      'I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain behind the numbers',
+      'I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain points behind the numbers.',
     'about.body.before': 'I worked at Rocketbank, Yandex, and T-Bank, and now I am a product manager at ',
     'about.body.company': 'karta.io',
     'about.body.after':
