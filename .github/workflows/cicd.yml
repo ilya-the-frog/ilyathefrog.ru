@@ -34,8 +34,24 @@ jobs:
 
           # чтобы не заливать лишнее
           rsyncArgs: >
+            --delete
             --exclude=.git
             --exclude=.github
             --exclude=.DS_Store
             --exclude=.gitignore
             --exclude=README.md
+
+      - name: Upload hidden web metadata
+        env:
+          BEGET_HOST: ${{ secrets.BEGET_HOST }}
+          BEGET_USER: ${{ secrets.BEGET_USER }}
+          BEGET_PASSWORD: ${{ secrets.BEGET_PASSWORD }}
+          BEGET_PATH: ${{ secrets.BEGET_PATH }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sshpass
+          sshpass -p "$BEGET_PASSWORD" sftp -o StrictHostKeyChecking=no -P 22 "$BEGET_USER@$BEGET_HOST" <<SFTP
+          -mkdir $BEGET_PATH/.well-known
+          put .well-known/http-message-signatures-directory $BEGET_PATH/.well-known/http-message-signatures-directory
+          put .htaccess $BEGET_PATH/.htaccess
+          SFTP
