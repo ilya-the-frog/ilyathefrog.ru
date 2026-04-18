@@ -9,10 +9,13 @@
 ## Что внутри
 
 - `index.html` — структура страницы, SEO-мета, Open Graph и контентные блоки.
+- `index.md` — Markdown-версия главной страницы для агентов.
+- `.htaccess` — negotiation для `Accept: text/markdown`, `Link` response headers и заголовки Markdown-ответа.
 - `style.css` — стили визитки.
 - `js.js` — переключение языка, автоопределение языка браузера, сохранение выбора языка и даты публикаций.
 - `avatar.jpeg`, фавиконки и web manifest — визуальные ассеты сайта.
 - `robots.txt`, `sitemap.xml`, `llms.txt` — служебные файлы для поисковиков и LLM.
+- `.well-known/http-message-signatures-directory` — директория публичных ключей для Web Bot Auth.
 
 ## Языки
 
@@ -26,6 +29,14 @@
 - [Codex](https://openai.com/codex/): сначала как плагин, потом как отдельное приложение
 
 Так как сборки нет, для проверки достаточно открыть `index.html` в браузере или поднять любой локальный статический сервер.
+
+Markdown-ответ для агентов проверяется на сервере с поддержкой `.htaccess`:
+
+```sh
+curl -i https://ilyathefrog.ru/ -H 'Accept: text/markdown'
+```
+
+Ожидаемые ключевые заголовки: `Content-Type: text/markdown; charset=UTF-8`, `Vary: Accept`, `Link`, `x-markdown-tokens`.
 
 ## Деплой
 

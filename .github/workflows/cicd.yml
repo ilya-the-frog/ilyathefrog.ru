@@ -24,7 +24,7 @@ jobs:
           port: 22
 
           # что отправляем
-          local_path: './*'
+          local_path: './'
 
           # куда отправляем (папка сайта на Beget)
           remote_path: ${{ secrets.BEGET_PATH }}
@@ -39,4 +39,3 @@ jobs:
             --exclude=.DS_Store
             --exclude=.gitignore
             --exclude=README.md
-            --exclude=*.md

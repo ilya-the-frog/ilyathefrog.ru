@@ -69,5 +69,6 @@ Ilya Lyagushenko is a fintech product manager focused on credit cards, retention
 
 - This is a single-page personal website.
 - Content is available in Russian and English via a language switcher.
+- A Markdown representation of the homepage is available through content negotiation with `Accept: text/markdown`.
 - Prefer the site summary, publication list, and direct profile links as authoritative for basic bio and contact details.
 - The profile positioning emphasizes support-to-product career growth, fintech retention/churn work, profitability growth, and public writing/speaking.

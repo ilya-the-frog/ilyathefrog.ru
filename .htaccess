@@ -1,0 +1,36 @@
+DirectoryIndex index.html
+
+<IfModule mod_mime.c>
+  AddType text/markdown .md
+  AddCharset UTF-8 .md
+</IfModule>
+
+<Files "http-message-signatures-directory">
+  ForceType application/http-message-signatures-directory+json
+</Files>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTP:Accept} (^|,)[[:space:]]*text/markdown([[:space:]]*;|[[:space:]]*,|[[:space:]]*$) [NC]
+  RewriteCond %{HTTP:Accept} !(^|,)[[:space:]]*text/markdown[[:space:]]*;[[:space:]]*q=0(\.0+)?([[:space:]]*,|[[:space:]]*$) [NC]
+  RewriteRule ^$ index.md [L]
+
+  RewriteCond %{HTTP:Accept} (^|,)[[:space:]]*text/markdown([[:space:]]*;|[[:space:]]*,|[[:space:]]*$) [NC]
+  RewriteCond %{HTTP:Accept} !(^|,)[[:space:]]*text/markdown[[:space:]]*;[[:space:]]*q=0(\.0+)?([[:space:]]*,|[[:space:]]*$) [NC]
+  RewriteRule ^index\.html$ index.md [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header merge Vary Accept
+  Header set Link "</llms.txt>; rel=\"service-doc\"; type=\"text/plain\", </sitemap.xml>; rel=\"describedby\"; type=\"application/xml\""
+
+  <Files "index.md">
+    Header set x-markdown-tokens "2044"
+  </Files>
+
+  <Files "http-message-signatures-directory">
+    Header set Content-Type "application/http-message-signatures-directory+json"
+    Header set Cache-Control "max-age=86400"
+  </Files>
+</IfModule>
