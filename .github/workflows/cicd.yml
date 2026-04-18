@@ -52,6 +52,7 @@ jobs:
           sudo apt-get install -y sshpass
           sshpass -p "$BEGET_PASSWORD" sftp -o StrictHostKeyChecking=no -P 22 "$BEGET_USER@$BEGET_HOST" <<SFTP
           -mkdir $BEGET_PATH/.well-known
+          -rm $BEGET_PATH/index.html
           put .well-known/http-message-signatures-directory $BEGET_PATH/.well-known/http-message-signatures-directory
           put .htaccess $BEGET_PATH/.htaccess
           SFTP
