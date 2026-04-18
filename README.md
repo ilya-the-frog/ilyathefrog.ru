@@ -9,6 +9,7 @@
 ## Что внутри
 
 - `index.html` — структура страницы, SEO-мета, Open Graph и контентные блоки.
+- `index.php` — front controller для главной: выставляет discovery-заголовки и отдает HTML или Markdown по `Accept`.
 - `index.md` — Markdown-версия главной страницы для агентов.
 - `.htaccess` — negotiation для `Accept: text/markdown`, `Link` response headers и заголовки Markdown-ответа.
 - `style.css` — стили визитки.
