@@ -31,10 +31,29 @@
 
 Так как сборки нет, для проверки HTML достаточно открыть `home.html` в браузере. Серверные заголовки проверяются после деплоя.
 
-Markdown-ответ для агентов проверяется на сервере с поддержкой `.htaccess`:
+## Локальная проверка
+
+Для быстрой визуальной проверки достаточно открыть `home.html` в браузере. Это основной HTML главной страницы.
+
+Чтобы проверить поведение `/`, `index.php` и Markdown-ответ по `Accept`, нужен локальный PHP-сервер:
 
 ```sh
+php -S 127.0.0.1:8787
+```
+
+После запуска:
+
+```sh
+curl -i http://127.0.0.1:8787/
+curl -i http://127.0.0.1:8787/ -H 'Accept: text/markdown'
+```
+
+Встроенный PHP-сервер не исполняет `.htaccess`, поэтому Apache/Beget-специфичные правила и заголовки проверяются на проде:
+
+```sh
+curl -i https://ilyathefrog.ru/
 curl -i https://ilyathefrog.ru/ -H 'Accept: text/markdown'
+curl -i https://ilyathefrog.ru/.well-known/http-message-signatures-directory
 ```
 
 Ожидаемые ключевые заголовки: `Content-Type: text/markdown; charset=UTF-8`, `Vary: Accept`, `Link`, `x-markdown-tokens`.
