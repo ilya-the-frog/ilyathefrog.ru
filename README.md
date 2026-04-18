@@ -8,8 +8,8 @@
 
 ## Что внутри
 
-- `index.html` — структура страницы, SEO-мета, Open Graph и контентные блоки.
 - `index.php` — front controller для главной: выставляет discovery-заголовки и отдает HTML или Markdown по `Accept`.
+- `home.html` — структура страницы, SEO-мета, Open Graph и контентные блоки.
 - `index.md` — Markdown-версия главной страницы для агентов.
 - `.htaccess` — negotiation для `Accept: text/markdown`, `Link` response headers и заголовки Markdown-ответа.
 - `style.css` — стили визитки.
@@ -29,7 +29,7 @@
 - [VS Code](https://code.visualstudio.com/)
 - [Codex](https://openai.com/codex/): сначала как плагин, потом как отдельное приложение
 
-Так как сборки нет, для проверки достаточно открыть `index.html` в браузере или поднять любой локальный статический сервер.
+Так как сборки нет, для проверки HTML достаточно открыть `home.html` в браузере. Серверные заголовки проверяются после деплоя.
 
 Markdown-ответ для агентов проверяется на сервере с поддержкой `.htaccess`:
 

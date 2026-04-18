@@ -38,4 +38,4 @@ if (acceptsMarkdown($_SERVER['HTTP_ACCEPT'] ?? '') && is_file($root . '/index.md
 }
 
 header('Content-Type: text/html; charset=UTF-8');
-readfile($root . '/index.html');
+readfile($root . '/home.html');
