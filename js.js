@@ -84,7 +84,8 @@ const translations = {
     'speaker.pm.title': 'Product&Marketing — про клиентов',
     'speaker.pm.link': 'Выступление',
     'speaker.jobsearch.title': 'Как увеличить свою заметность на рынке труда',
-    'speaker.jobsearch.link': 'Выступление',
+    'speaker.jobsearch.youtube': 'YouTube',
+    'speaker.jobsearch.vk': 'VK Видео',
 
     'projects.title': 'Вне работы',
     'projects.intro':
@@ -225,7 +226,8 @@ const translations = {
     'speaker.pm.title': 'Product&Marketing — about customers',
     'speaker.pm.link': 'Talk',
     'speaker.jobsearch.title': 'How to increase your visibility in the job market',
-    'speaker.jobsearch.link': 'Talk',
+    'speaker.jobsearch.youtube': 'YouTube',
+    'speaker.jobsearch.vk': 'VK Video',
 
     'projects.title': 'Beyond work',
     'projects.intro':
