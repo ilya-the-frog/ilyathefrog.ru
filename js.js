@@ -110,6 +110,7 @@ const translations = {
     'publications.comnews':
       'Интерфейс поменять легко — сложнее изменить то, что за ним стоит',
     'publications.habr.publisher': 'Хабр',
+    'publications.habr.ai': 'ИИ в работе руководителя. Помощник или источник перегрузки?',
     'publications.habr': 'Как руководителю сохранять эффективность в нестабильной среде: инсайты с офлайн-встречи',
     'publications.vc': 'Как вернуть клиентов без новых фич',
     'publications.gopractice': 'От Макдоналдс до продакта',
@@ -252,6 +253,7 @@ const translations = {
     'publications.comnews':
       'It is easy to change the interface; it is harder to change what stands behind it',
     'publications.habr.publisher': 'Habr',
+    'publications.habr.ai': 'AI in a leader\'s work: assistant or source of overload?',
     'publications.habr': 'How leaders can stay effective in an unstable environment: insights from an offline meetup',
     'publications.vc': 'How to win back customers without new features',
     'publications.gopractice': 'From McDonald\'s to Product',
