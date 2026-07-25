@@ -86,6 +86,8 @@ const translations = {
     'speaker.jobsearch.title': 'Как увеличить свою заметность на рынке труда',
     'speaker.jobsearch.youtube': 'YouTube',
     'speaker.jobsearch.vk': 'VK Видео',
+    'speaker.liga.title': 'Лига Созидателей',
+    'speaker.liga.link': 'Выступление',
 
     'projects.title': 'Вне работы',
     'projects.intro':
@@ -231,6 +233,8 @@ const translations = {
     'speaker.jobsearch.title': 'How to increase your visibility in the job market',
     'speaker.jobsearch.youtube': 'YouTube',
     'speaker.jobsearch.vk': 'VK Video',
+    'speaker.liga.title': 'League of Creators',
+    'speaker.liga.link': 'Talk',
 
     'projects.title': 'Beyond work',
     'projects.intro':

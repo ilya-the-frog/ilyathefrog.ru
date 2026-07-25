@@ -67,6 +67,14 @@ Ilya Lyagushenko is a fintech product manager focused on credit cards, retention
 - SMMplanner - Your target audience is easier to reach than you think: https://smmplanner.com/blog/vasha-celevaya-auditoriya-proshe-chem-vy-dumaete/
 - SMMplanner - Entertainment industry: The International 2016 and the LoL Continental League final: https://smmplanner.com/blog/industriya-razvlechenij-international-2016-i-final-kontinentalnoj-ligi-league-legends/
 
+## Speaking
+
+- Sirius - talk: https://t.me/travelasproduct/125
+- Product&Marketing - talk about customers: https://t.me/product2marketing/381
+- How to increase your visibility in the job market - YouTube: https://youtu.be/XAloWsk3Vtk?t=691
+- How to increase your visibility in the job market - VK Video: https://vkvideo.ru/video-233578065_456239019?list=ln-S78Js3Gk64GyXJAOwx
+- League of Creators - talk: https://t.me/travelasproduct/1153
+
 ## Notes For LLMs
 
 - This is a single-page personal website.
