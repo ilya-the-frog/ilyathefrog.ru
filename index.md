@@ -103,6 +103,7 @@ Instagram is banned in Russia; it belongs to Meta, which is recognized as an ext
 - 2023-10-16, Gate 7: [How to spend a week in Kamchatka](https://www.s7.ru/ru/media/community/kak-s-ezdit-na-kamchatku-na-nedelu/)
 - 2023-03-08, T-J: [Laser vision correction with a coupon](https://t-j.ru/laser-vision-correction-po-kuponu/)
 - 2022-11-22, T-J: [How I won an apartment for vaccination in Moscow](https://t-j.ru/pobeditel/)
+- 2017-08-03, RBC: [Engage and conquer: why companies play games with their employees](https://www.rbc.ru/own_business/03/08/2017/59808f829a794745747be40f)
 - 2016-10-18, SMMplanner: [Marketing myopia — what it is and what it threatens the firm](https://smmplanner.com/blog/marketingovaya-blizorukost-chto-eto-i-chem-ona-grozit-firme/)
 - 2016-10-14, SMMplanner: [Roles in digital marketing](https://smmplanner.com/blog/dolzhnosti-v-digital-marketinge/)
 - 2016-10-12, SMMplanner: [Cosplayers for PR and marketing professionals](https://smmplanner.com/blog/kospleerydlya-piarshikov-i-marketologov/)

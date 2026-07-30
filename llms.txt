@@ -39,6 +39,7 @@ Ilya Lyagushenko is a fintech product manager focused on credit cards, retention
 
 - Home: https://ilyathefrog.ru/
 - Sitemap: https://ilyathefrog.ru/sitemap.xml
+- RBC - Engage and conquer: why companies play games with their employees: https://www.rbc.ru/own_business/03/08/2017/59808f829a794745747be40f
 - The Code - How I went from support to product manager at a bank: https://thecode.media/iz-podderzhki-v-prodakt-menedzhery/
 - Habr - AI in a leader's work: assistant or source of overload?: https://habr.com/ru/companies/cleverpumpkin/articles/1042036/
 - ComNews - It is easy to change the interface; it is harder to change what stands behind it: https://www.comnews.ru/content/244344/2026-03-23/2026-w13/1013/prodakt-lider-ilya-lyagushenko-interfeys-pomenyat-legko-slozhnee-izmenit-chto-za-nim-stoit

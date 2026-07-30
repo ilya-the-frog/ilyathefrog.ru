@@ -32,7 +32,7 @@ $root = __DIR__;
 
 if (acceptsMarkdown($_SERVER['HTTP_ACCEPT'] ?? '') && is_file($root . '/index.md')) {
     header('Content-Type: text/markdown; charset=UTF-8');
-    header('x-markdown-tokens: 2160');
+    header('x-markdown-tokens: 2200');
     readfile($root . '/index.md');
     exit;
 }
