@@ -88,6 +88,8 @@ const translations = {
     'speaker.jobsearch.vk': 'VK Видео',
     'speaker.liga.title': 'Лига Созидателей',
     'speaker.liga.link': 'Выступление',
+    'speaker.fuckupnight.title': 'Product Fuckup Night — модератор',
+    'speaker.fuckupnight.youtube': 'YouTube',
 
     'projects.title': 'Вне работы',
     'projects.intro':
@@ -237,6 +239,8 @@ const translations = {
     'speaker.jobsearch.vk': 'VK Video',
     'speaker.liga.title': 'League of Creators',
     'speaker.liga.link': 'Talk',
+    'speaker.fuckupnight.title': 'Product Fuckup Night — moderator',
+    'speaker.fuckupnight.youtube': 'YouTube',
 
     'projects.title': 'Beyond work',
     'projects.intro':

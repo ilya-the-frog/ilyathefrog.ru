@@ -78,6 +78,7 @@ Instagram is banned in Russia; it belongs to Meta, which is recognized as an ext
 - Product&Marketing, about customers: [talk](https://t.me/product2marketing/381)
 - How to increase your visibility in the job market: [YouTube](https://youtu.be/XAloWsk3Vtk?t=691), [VK Video](https://vkvideo.ru/video-233578065_456239019?list=ln-S78Js3Gk64GyXJAOwx)
 - League of Creators: [talk](https://t.me/travelasproduct/1153)
+- Product Fuckup Night, moderator: [YouTube](https://www.youtube.com/live/Xby9iKtLhus)
 
 ## Publications
 
