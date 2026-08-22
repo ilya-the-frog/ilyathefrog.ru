@@ -39,7 +39,7 @@ Ilya Lyagushenko is a fintech product manager focused on credit cards, retention
 
 - Home: https://ilyathefrog.ru/
 - Sitemap: https://ilyathefrog.ru/sitemap.xml
-- Mobility - “The bus left, so I took a scooter.” Why adults ride personal mobility devices: https://mobilitymag.ru/1680-avtobus-uekhal-ya-vzyal-samokat-pochemu-vzroslye-lyudi-ezdyat-na-sim
+- Mobility - “The bus left, so I took a scooter.” Why adults ride e-scooters: https://mobilitymag.ru/1680-avtobus-uekhal-ya-vzyal-samokat-pochemu-vzroslye-lyudi-ezdyat-na-sim
 - RBC - Engage and conquer: why companies play games with their employees: https://www.rbc.ru/own_business/03/08/2017/59808f829a794745747be40f
 - The Code - How I went from support to product manager at a bank: https://thecode.media/iz-podderzhki-v-prodakt-menedzhery/
 - Habr - AI in a leader's work: assistant or source of overload?: https://habr.com/ru/companies/cleverpumpkin/articles/1042036/

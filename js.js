@@ -264,7 +264,7 @@ const translations = {
 
     'publications.title': 'Publications',
     'publications.mobility.publisher': 'Mobility',
-    'publications.mobility': '“The bus left, so I took a scooter.” Why adults ride personal mobility devices',
+    'publications.mobility': '“The bus left, so I took a scooter.” Why adults ride e-scooters',
     'publications.comnews.publisher': 'ComNews',
     'publications.comnews':
       'It is easy to change the interface; it is harder to change what stands behind it',
