@@ -82,6 +82,7 @@ Instagram is banned in Russia; it belongs to Meta, which is recognized as an ext
 
 ## Publications
 
+- 2026-08-13, Mobility: [“The bus left, so I took a scooter.” Why adults ride personal mobility devices](https://mobilitymag.ru/1680-avtobus-uekhal-ya-vzyal-samokat-pochemu-vzroslye-lyudi-ezdyat-na-sim)
 - 2026-07-24, The Code: [How I went from support to product manager at a bank](https://thecode.media/iz-podderzhki-v-prodakt-menedzhery/)
 - 2026-06-01, Habr: [AI in a leader's work: assistant or source of overload?](https://habr.com/ru/companies/cleverpumpkin/articles/1042036/)
 - 2026-03-23, ComNews: [It is easy to change the interface; it is harder to change what stands behind it](https://www.comnews.ru/content/244344/2026-03-23/2026-w13/1013/prodakt-lider-ilya-lyagushenko-interfeys-pomenyat-legko-slozhnee-izmenit-chto-za-nim-stoit)

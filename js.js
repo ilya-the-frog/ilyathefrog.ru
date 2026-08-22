@@ -110,6 +110,8 @@ const translations = {
     'projects.side.bot.text': 'Telegram-бот с 40k+ MAU',
 
     'publications.title': 'Публикации',
+    'publications.mobility.publisher': 'Мобилити',
+    'publications.mobility': '«Автобус уехал — я взял самокат». Почему взрослые люди ездят на СИМ',
     'publications.comnews.publisher': 'ComNews',
     'publications.comnews':
       'Интерфейс поменять легко — сложнее изменить то, что за ним стоит',
@@ -261,6 +263,8 @@ const translations = {
     'projects.side.bot.text': 'A Telegram bot with 40k+ MAU',
 
     'publications.title': 'Publications',
+    'publications.mobility.publisher': 'Mobility',
+    'publications.mobility': '“The bus left, so I took a scooter.” Why adults ride personal mobility devices',
     'publications.comnews.publisher': 'ComNews',
     'publications.comnews':
       'It is easy to change the interface; it is harder to change what stands behind it',
