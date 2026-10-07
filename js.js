@@ -90,6 +90,8 @@ const translations = {
     'speaker.liga.link': 'Выступление',
     'speaker.fuckupnight.title': 'Product Fuckup Night — модератор',
     'speaker.fuckupnight.youtube': 'YouTube',
+    'speaker.cleverpumpkin.title': 'CleverPumpkin — AI в работе руководителя',
+    'speaker.cleverpumpkin.link': 'Обзор панельной дискуссии на Хабре',
 
     'projects.title': 'Вне работы',
     'projects.intro':
@@ -243,6 +245,8 @@ const translations = {
     'speaker.liga.link': 'Talk',
     'speaker.fuckupnight.title': 'Product Fuckup Night — moderator',
     'speaker.fuckupnight.youtube': 'YouTube',
+    'speaker.cleverpumpkin.title': 'CleverPumpkin — AI in a leader\'s work',
+    'speaker.cleverpumpkin.link': 'Panel discussion recap on Habr',
 
     'projects.title': 'Beyond work',
     'projects.intro':

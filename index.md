@@ -79,6 +79,7 @@ Instagram is banned in Russia; it belongs to Meta, which is recognized as an ext
 - How to increase your visibility in the job market: [YouTube](https://youtu.be/XAloWsk3Vtk?t=691), [VK Video](https://vkvideo.ru/video-233578065_456239019?list=ln-S78Js3Gk64GyXJAOwx)
 - League of Creators: [talk](https://t.me/travelasproduct/1153)
 - Product Fuckup Night, moderator: [YouTube](https://www.youtube.com/live/Xby9iKtLhus)
+- CleverPumpkin — AI in a leader's work: [Panel discussion recap on Habr](https://habr.com/ru/companies/cleverpumpkin/articles/1011208/)
 
 ## Publications
 
