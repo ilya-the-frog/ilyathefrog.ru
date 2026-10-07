@@ -322,21 +322,12 @@ function detectBrowserLang() {
   return SUPPORTED.includes(short) ? short : FALLBACK_LANG;
 }
 
-function getLangFromCookie() {
-  const pattern = new RegExp(`(?:^|;\\s*)${encodeURIComponent(LANG_KEY)}=([^;]*)`);
-  const match = document.cookie.match(pattern);
-  return match ? decodeURIComponent(match[1]) : null;
-}
-
-function setLangCookie(lang) {
-  const maxAge = 60 * 60 * 24 * 365;
-  const cookieValue = `${encodeURIComponent(LANG_KEY)}=${encodeURIComponent(lang)};max-age=${maxAge};path=/;SameSite=Lax`;
-  document.cookie = cookieValue;
-}
-
 function getInitialLang() {
-  const persistedCookie = getLangFromCookie();
-  if (persistedCookie && SUPPORTED.includes(persistedCookie)) return persistedCookie;
+  const legacyCookie = document.cookie.match(new RegExp(`(?:^|;\\s*)${LANG_KEY}=(ru|en)(?:;|$)`));
+  if (legacyCookie) {
+    localStorage.setItem(LANG_KEY, legacyCookie[1]);
+    document.cookie = `${LANG_KEY}=;max-age=0;path=/;SameSite=Lax`;
+  }
 
   const saved = localStorage.getItem(LANG_KEY);
   if (saved && SUPPORTED.includes(saved)) return saved;
@@ -364,7 +355,6 @@ function applyTranslations(lang) {
 function setLang(lang) {
   const next = SUPPORTED.includes(lang) ? lang : FALLBACK_LANG;
   localStorage.setItem(LANG_KEY, next);
-  setLangCookie(next);
   applyTranslations(next);
 }
 

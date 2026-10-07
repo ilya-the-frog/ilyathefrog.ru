@@ -179,11 +179,6 @@ footer {
   line-height: 1.35;
 }
 
-.links__text {
-  font-weight: 400;
-  white-space: pre-line;
-}
-
 /* =========================
    About
    ========================= */
@@ -242,11 +237,6 @@ footer {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 0.12em;
-}
-
-.about-inline-link:hover,
-.about-inline-link:focus-visible {
-  text-decoration: underline;
 }
 
 .about-card__note {
@@ -433,10 +423,6 @@ footer {
 
 .link-logo--linkedin svg {
   fill: #265cff;
-}
-
-.link-logo--instagram svg {
-  fill: #c13584;
 }
 
 .link-logo--twitter svg {

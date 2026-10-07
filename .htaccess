@@ -12,13 +12,7 @@ DirectoryIndex index.php home.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  RewriteCond %{HTTP:Accept} (^|,)[[:space:]]*text/markdown([[:space:]]*;|[[:space:]]*,|[[:space:]]*$) [NC]
-  RewriteCond %{HTTP:Accept} !(^|,)[[:space:]]*text/markdown[[:space:]]*;[[:space:]]*q=0(\.0+)?([[:space:]]*,|[[:space:]]*$) [NC]
-  RewriteRule ^$ index.md [L]
-
-  RewriteCond %{HTTP:Accept} (^|,)[[:space:]]*text/markdown([[:space:]]*;|[[:space:]]*,|[[:space:]]*$) [NC]
-  RewriteCond %{HTTP:Accept} !(^|,)[[:space:]]*text/markdown[[:space:]]*;[[:space:]]*q=0(\.0+)?([[:space:]]*,|[[:space:]]*$) [NC]
-  RewriteRule ^index\.html$ index.md [L]
+  RewriteRule ^index\.html$ index.php [L]
 </IfModule>
 
 <IfModule mod_headers.c>

@@ -10,7 +10,7 @@
 - `index.php` — front controller: отдаёт `index.md` при `Accept: text/markdown`, иначе `home.html`; выставляет `Link`-заголовки и `x-markdown-tokens`.
 - `llms.txt` — карточка сайта для LLM, на английском.
 - `style.css`, `normalize.css` — стили; фавиконки и web manifest — визуальные ассеты.
-- `.htaccess` — content negotiation и заголовки для Apache/Beget (локально не исполняется).
+- `.htaccess` — маршрутизация `/index.html` на `index.php` и заголовки для Apache/Beget (локально не исполняется).
 - `robots.txt`, `sitemap.xml` — служебные файлы для поисковиков.
 
 ## Главный инвариант: контент живёт в четырёх местах
