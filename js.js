@@ -7,6 +7,8 @@ const translations = {
   ru: {
     'header.title': 'Илья Лягушенко // Ilya Lyagushenko',
     'header.subtitle': 'Продакт в финтехе: retention, churn, рост доходности и CX',
+    'header.avatar': 'Фото Ильи Лягушенко',
+    'header.updated': 'Обновлено:',
     'about.title': 'Обо мне',
     'about.lead':
       'Я вырос из поддержки и клиентского опыта в продукт, поэтому умею не только смотреть на графики, но и понимать, какая реальная боль клиента стоит за цифрами',
@@ -28,6 +30,7 @@ const translations = {
     'about.proof.experience.label': 'лет в IT',
     'about.proof.team.value': 'до 15',
     'about.proof.team.label': 'человек в команде',
+    'about.proof.note': 'Цифры по состоянию на 2026 год',
     'about.focus.label': 'Фокус',
     'about.focus.fintech.title': 'Финтех и карты',
     'about.focus.fintech.text':
@@ -162,6 +165,8 @@ const translations = {
   en: {
     'header.title': 'Ilya Lyagushenko // Илья Лягушенко',
     'header.subtitle': 'Fintech Product Manager: retention, churn, profitability growth, and CX',
+    'header.avatar': 'Photo of Ilya Lyagushenko',
+    'header.updated': 'Updated:',
     'about.title': 'About',
     'about.lead':
       'I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain points behind the numbers.',
@@ -183,6 +188,7 @@ const translations = {
     'about.proof.experience.label': 'years in Tech',
     'about.proof.team.value': 'Up to 15',
     'about.proof.team.label': 'people on a team',
+    'about.proof.note': 'Figures as of 2026',
     'about.focus.label': 'Focus',
     'about.focus.fintech.title': 'Fintech & cards',
     'about.focus.fintech.text':
@@ -339,9 +345,9 @@ function applyTranslations(lang) {
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-i18n]').forEach((node) => {
     const key = node.getAttribute('data-i18n');
-    if (dict[key]) {
-      node.textContent = dict[key];
-    }
+    if (!dict[key]) return;
+    if (node.tagName === 'IMG') node.alt = dict[key];
+    else node.textContent = dict[key];
   });
 
   document

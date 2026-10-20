@@ -21,6 +21,8 @@ He has worked at Rocketbank, Yandex, and T-Bank, and is now a product manager at
 
 ## Proof Points
 
+Figures as of 2026. Page last updated: 2026-10-20.
+
 - 34% churn reduction YoY
 - RUB 400M+ annual impact
 - 7+ years in tech
@@ -102,7 +104,7 @@ Instagram is banned in Russia; it belongs to Meta, which is recognized as an ext
 - 2025-02-25, Yandex Real Estate: [Renting out my apartment while living in a rental](https://arenda.yandex.ru/journal/post/svoyu-kvartiru-sdayu-a-sam-zhivu-na-syomnoy-istoriya-sobstvennika-iz-moskvy/)
 - 2024-11-13, Gate 7: [Ride the hype: how to get a visa to Japan](https://www.s7.ru/ru/media/community/osedlat-haip-kak-poluchit-vizu-v-yaponiu/)
 - 2024-04-26, T-J: [Good: volunteering pros and cons](https://t-j.ru/dobro-volunteering-pros-cons/)
-- 2024-02-29, T-J: ["No regrets": 5 unconventional reasons to take out a loan](https://journal.tinkoff.ru/strange-loans-list/)
+- 2024-02-29, T-J: ["No regrets": 5 unconventional reasons to take out a loan](https://t-j.ru/strange-loans-list/)
 - 2023-10-16, Gate 7: [How to spend a week in Kamchatka](https://www.s7.ru/ru/media/community/kak-s-ezdit-na-kamchatku-na-nedelu/)
 - 2023-03-08, T-J: [Laser vision correction with a coupon](https://t-j.ru/laser-vision-correction-po-kuponu/)
 - 2022-11-22, T-J: [How I won an apartment for vaccination in Moscow](https://t-j.ru/pobeditel/)
