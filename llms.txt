@@ -8,7 +8,7 @@
 - Secondary language: English
 - Canonical URL: https://ilyathefrog.ru/
 - Site type: personal profile / portfolio / contact page
-- Last updated: 2026-10-20
+- Last updated: 2026-10-22
 
 ## About
 
@@ -33,6 +33,7 @@ Ilya Lyagushenko is a fintech product manager focused on credit cards, retention
 - Telegram: https://t.me/travelasproduct
 - LinkedIn: https://www.linkedin.com/in/ilyathefrog/
 - GitHub: https://github.com/ilya-the-frog
+- Google Scholar: https://scholar.google.com/citations?hl=ru&user=gvF_QqYAAAAJ
 - X: https://x.com/ilya_the_frog
 - Instagram: https://www.instagram.com/ilya-the-frog
 

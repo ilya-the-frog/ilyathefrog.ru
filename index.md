@@ -21,7 +21,7 @@ He has worked at Rocketbank, Yandex, and T-Bank, and is now a product manager at
 
 ## Proof Points
 
-Figures as of 2026. Page last updated: 2026-10-20.
+Figures as of 2026. Page last updated: 2026-10-22.
 
 - 34% churn reduction YoY
 - RUB 400M+ annual impact
@@ -61,6 +61,7 @@ Travel is part of Ilya's product mindset: it is a way to observe how services wo
 - Telegram: [@travelasproduct](https://t.me/travelasproduct)
 - LinkedIn: [Ilya Lyagushenko](https://www.linkedin.com/in/ilyathefrog/)
 - GitHub: [github.com/ilya-the-frog](https://github.com/ilya-the-frog)
+- Google Scholar: [Ilya Lyagushenko](https://scholar.google.com/citations?hl=ru&user=gvF_QqYAAAAJ)
 - Dzen: [dzen.ru/travelasproduct](https://dzen.ru/travelasproduct)
 - X: [x.com/ilya_the_frog](https://x.com/ilya_the_frog)
 - Instagram: [@ilya-the-frog](https://www.instagram.com/ilya-the-frog)
