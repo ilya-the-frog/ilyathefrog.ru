@@ -9,13 +9,18 @@ const translations = {
     'header.subtitle': 'Продакт в финтехе: retention, churn, рост доходности и CX',
     'header.avatar': 'Фото Ильи Лягушенко',
     'header.updated': 'Обновлено:',
+    'work.title': 'Работать вместе',
+    'work.text':
+      'Открыт к предложениям: продуктовые роли в финтехе, retention, клиентский опыт и сервисные сценарии. Напишите — отвечу.',
+    'work.email': 'Написать на почту',
+    'work.telegram': 'Написать в Telegram',
     'about.title': 'Обо мне',
     'about.lead':
       'Я вырос из поддержки и клиентского опыта в продукт, поэтому умею не только смотреть на графики, но и понимать, какая реальная боль клиента стоит за цифрами',
-    'about.body.before': 'Работал в Рокетбанке, Яндексе и Т-Банке, сейчас — менеджер продукта в ',
+    'about.body.before': 'Работал в Рокетбанке, Яндексе, Т-Банке и ',
     'about.body.company': 'karta.io',
     'about.body.after':
-      '. Специализируюсь на финтехе, кредитных картах, удержании и клиентских сценариях, где результат влияет и на опыт клиента, и на экономику продукта.',
+      '. Сейчас открыт к предложениям. Специализируюсь на финтехе, кредитных картах, удержании и клиентских сценариях, где результат влияет и на опыт клиента, и на экономику продукта.',
     'about.public.before':
       'О продукте, клиентском опыте и сервисных сценариях я пишу и говорю публично: мои материалы выходили в отраслевых и федеральных СМИ, некоторые тексты публиковались в научных изданиях, а профессиональные результаты были отмечены наградой ',
     'about.public.award': 'Best Business Awards',
@@ -169,13 +174,18 @@ const translations = {
     'header.subtitle': 'Fintech Product Manager: retention, churn, profitability growth, and CX',
     'header.avatar': 'Photo of Ilya Lyagushenko',
     'header.updated': 'Updated:',
+    'work.title': 'Work with me',
+    'work.text':
+      'Open to new opportunities: product roles in fintech, retention, customer experience, and service journeys. Drop me a line.',
+    'work.email': 'Email me',
+    'work.telegram': 'Message on Telegram',
     'about.title': 'About',
     'about.lead':
       'I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain points behind the numbers.',
-    'about.body.before': 'I worked at Rocketbank, Yandex, and T-Bank, and now I am a product manager at ',
+    'about.body.before': 'I worked at Rocketbank, Yandex, T-Bank, and ',
     'about.body.company': 'karta.io',
     'about.body.after':
-      '. I focus on fintech, credit cards, retention, and customer journeys where the outcome affects both customer experience and product economics.',
+      '. I am now open to new opportunities. I focus on fintech, credit cards, retention, and customer journeys where the outcome affects both customer experience and product economics.',
     'about.public.before':
       'I write and speak publicly about product, customer experience, and service journeys: my work has appeared in industry and national media, some texts were published in research journals, and my professional results were recognized by ',
     'about.public.award': 'Best Business Awards',

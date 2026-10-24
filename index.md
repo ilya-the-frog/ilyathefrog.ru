@@ -17,11 +17,18 @@ Primary human language: Russian. Secondary language: English.
 
 Ilya Lyagushenko is a fintech product manager focused on credit cards, retention, churn reduction, profitability growth, customer experience, and service journeys. He moved from customer support and customer experience into product management, so his work combines business metrics with an understanding of the customer pain behind them.
 
-He has worked at Rocketbank, Yandex, and T-Bank, and is now a product manager at [karta.io](https://karta.io). He writes and speaks publicly about product, customer experience, and service journeys. His work has appeared in industry and national media, some texts were published in research journals, and his professional results were recognized by [Best Business Awards](https://www.pravda.ru/news/economics/2315820-best-business-awards/).
+He has worked at Rocketbank, Yandex, T-Bank, and [karta.io](https://karta.io), and is now open to new opportunities. He writes and speaks publicly about product, customer experience, and service journeys. His work has appeared in industry and national media, some texts were published in research journals, and his professional results were recognized by [Best Business Awards](https://www.pravda.ru/news/economics/2315820-best-business-awards/).
+
+## Work With Me
+
+Open to new opportunities: product roles in fintech, retention, customer experience, and service journeys.
+
+- Email: [ilya.the.frog@gmail.com](mailto:ilya.the.frog@gmail.com)
+- Telegram: [@travelasproduct](https://t.me/travelasproduct)
 
 ## Proof Points
 
-Figures as of 2026. Page last updated: 2026-10-22.
+Figures as of 2026. Page last updated: 2026-10-24.
 
 - 34% churn reduction YoY
 - RUB 400M+ annual impact
