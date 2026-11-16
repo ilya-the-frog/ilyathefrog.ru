@@ -63,6 +63,7 @@ body {
   cursor: pointer;
   font-size: 13px;
   font-weight: 600;
+  text-decoration: none;
   color: #6a6a6a;
   transition: all 0.2s ease;
 }
@@ -193,13 +194,13 @@ footer {
   gap: 12px;
 }
 
-.about-card__lead,
-.about-card__body,
-.about-card__note {
+.about-card__intro blockquote,
+.about-card__intro p,
+.about-card__body {
   margin: 0;
 }
 
-.about-card__lead {
+.about-card__intro blockquote {
   font-size: clamp(20px, 2.6vw, 28px);
   line-height: 1.28;
   font-weight: 600;
@@ -209,7 +210,7 @@ footer {
   border-left: 4px solid #a370f0;
 }
 
-.about-card__lead::before {
+.about-card__intro blockquote::before {
   content: "“";
   position: absolute;
   left: 10px;
@@ -219,7 +220,7 @@ footer {
   color: #a370f0;
 }
 
-.about-card__lead::after {
+.about-card__intro blockquote::after {
   content: "”";
   color: #a370f0;
   font-size: 0.9em;
@@ -227,23 +228,21 @@ footer {
   margin-left: 0.08em;
 }
 
+.about-card__intro blockquote p {
+  display: inline;
+}
+
+.about-card__intro > p,
 .about-card__body {
   font-size: 15px;
   line-height: 1.55;
   max-width: 860px;
 }
 
-.about-inline-link {
+.about-card__intro a {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 0.12em;
-}
-
-.about-card__note {
-  font-size: 15px;
-  line-height: 1.55;
-  color: inherit;
-  max-width: 860px;
 }
 
 .about-proof {
@@ -494,7 +493,7 @@ footer {
    Mobile tweaks
    ========================= */
 @media (max-width: 520px) {
-  .about-card__lead {
+  .about-card__intro blockquote {
     font-size: 22px;
   }
 

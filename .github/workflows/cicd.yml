@@ -1,58 +1,48 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
+  pull_request:
+    branches: [main]
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      # Если у тебя появится сборка (npm build и т.п.) — добавь шаги тут
-      # и поменяй local_path на папку сборки (например, dist/*)
-
-      - name: Upload via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          server: ${{ secrets.BEGET_HOST }}
-          username: ${{ secrets.BEGET_USER }}
-          password: ${{ secrets.BEGET_PASSWORD }}
-          port: 22
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - uses: actions/upload-pages-artifact@v5
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: dist
+          include-hidden-files: true
+          retention-days: 14
 
-          # что отправляем
-          local_path: './'
-
-          # куда отправляем (папка сайта на Beget)
-          remote_path: ${{ secrets.BEGET_PATH }}
-
-          # обычно на шаред-хостинге порт принимает SFTP
-          sftp_only: false
-
-          # чтобы не заливать лишнее
-          rsyncArgs: >
-            --delete
-            --exclude=.git
-            --exclude=.github
-            --exclude=.DS_Store
-            --exclude=.gitignore
-            --exclude=README.md
-
-      - name: Upload hidden web metadata
-        env:
-          BEGET_HOST: ${{ secrets.BEGET_HOST }}
-          BEGET_USER: ${{ secrets.BEGET_USER }}
-          BEGET_PASSWORD: ${{ secrets.BEGET_PASSWORD }}
-          BEGET_PATH: ${{ secrets.BEGET_PATH }}
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y sshpass
-          sshpass -p "$BEGET_PASSWORD" sftp -o StrictHostKeyChecking=no -P 22 "$BEGET_USER@$BEGET_HOST" <<SFTP
-          -mkdir $BEGET_PATH/.well-known
-          -rm $BEGET_PATH/index.html
-          put .well-known/http-message-signatures-directory $BEGET_PATH/.well-known/http-message-signatures-directory
-          put .htaccess $BEGET_PATH/.htaccess
-          SFTP
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v5
+        id: deployment
