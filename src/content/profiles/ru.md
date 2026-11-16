@@ -4,10 +4,10 @@ copy:
   "header.title": "Илья Лягушенко // Ilya Lyagushenko"
   "header.subtitle": "Продакт в финтехе: retention, churn, рост доходности и CX"
   "header.avatar": "Фото Ильи Лягушенко"
-  "header.updated": "Обновлено:"
   "work.title": "Работать вместе"
   "work.text": "Открыт к предложениям: продуктовые роли в финтехе, retention, клиентский опыт и сервисные сценарии. Напишите — отвечу."
   "work.email": "Написать на почту"
+  "work.subscribe": "Подписаться на Telegram-канал"
   "work.telegram": "Написать в Telegram"
   "about.title": "Обо мне"
   "about.proof.churn.value": "34%"
@@ -78,6 +78,7 @@ copy:
   "projects.side.bot.text": "Telegram-бот с 40k+ MAU"
   "publications.title": "Публикации"
   "footer.cta": "Подпишитесь на Telegram-канал!"
+  "footer.updated": "Обновлено:"
 ---
 
 > Я вырос из поддержки и клиентского опыта в продукт, поэтому умею не только смотреть на графики, но и понимать, какая реальная боль клиента стоит за цифрами

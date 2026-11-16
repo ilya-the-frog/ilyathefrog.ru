@@ -4,10 +4,10 @@ copy:
   "header.title": "Ilya Lyagushenko // Илья Лягушенко"
   "header.subtitle": "Fintech Product Manager: retention, churn, profitability growth, and CX"
   "header.avatar": "Photo of Ilya Lyagushenko"
-  "header.updated": "Updated:"
   "work.title": "Work with me"
   "work.text": "Open to new opportunities: product roles in fintech, retention, customer experience, and service journeys. Drop me a line."
   "work.email": "Email me"
+  "work.subscribe": "Subscribe to the Telegram channel"
   "work.telegram": "Message on Telegram"
   "about.title": "About"
   "about.proof.churn.value": "34%"
@@ -78,6 +78,7 @@ copy:
   "projects.side.bot.text": "A Telegram bot with 40k+ MAU"
   "publications.title": "Publications"
   "footer.cta": "Subscribe to the Telegram channel!"
+  "footer.updated": "Updated:"
 ---
 
 > I moved from customer support and customer experience into product, so I do not just read charts — I understand the customer pain points behind the numbers.

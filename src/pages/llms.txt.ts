@@ -16,7 +16,7 @@ export const GET: APIRoute = async ({ site }) => {
     ].join('\n'),
     '## Work With Me',
     t('work.text'),
-    ['work.email', 'work.telegram'].map(key => `- [${t(key)}](${link(key)})`).join('\n'),
+    ['work.email', 'work.subscribe', 'work.telegram'].map(key => `- [${t(key)}](${link(key)})`).join('\n'),
     '## Publications',
     publications.map(({ data }) => `- [${data.publisher.en} – ${data.title.en}](${data.url})`).join('\n'),
     '## Speaking',

@@ -479,12 +479,13 @@ footer {
   line-height: 1.4;
 
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
 }
 
 .work-cta {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
   margin-top: 16px;
 }
@@ -502,7 +503,8 @@ footer {
   }
 
   .about-grid,
-  .about-audience {
+  .about-audience,
+  .work-cta {
     grid-template-columns: 1fr;
   }
 

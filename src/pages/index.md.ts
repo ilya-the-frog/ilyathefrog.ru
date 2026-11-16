@@ -16,7 +16,7 @@ export const GET: APIRoute = async ({ site }) => {
     `Page last updated: ${updated}.`,
     `## ${t('work.title')}`,
     t('work.text'),
-    ['work.email', 'work.telegram'].map(key => `- ${mdLink(t(key), link(key))}`).join('\n'),
+    ['work.email', 'work.subscribe', 'work.telegram'].map(key => `- ${mdLink(t(key), link(key))}`).join('\n'),
     `## ${t('about.title')}`,
     profile.body?.trim(),
     `## Proof Points\n\n${t('about.proof.note')}`,

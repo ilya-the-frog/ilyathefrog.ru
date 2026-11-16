@@ -1,8 +1,9 @@
 ---
-updated: "2026-10-24"
+updated: "2026-11-16"
 links:
   "work.email": "mailto:ilya.the.frog@gmail.com"
-  "work.telegram": "https://t.me/travelasproduct"
+  "work.subscribe": "https://t.me/travelasproduct"
+  "work.telegram": "https://t.me/ilya_the_frog"
   "projects.travel.channel.title": "https://t.me/travelasproduct"
   "projects.travel.nomad.note": "https://t.me/travelasproduct/250"
   "projects.travel.myfr.title": "https://my.flightradar24.com/"

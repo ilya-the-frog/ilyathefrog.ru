@@ -101,7 +101,7 @@ const root = lang === 'ru' ? './' : '../';
     </script>
 
     <link href={root + "normalize.css"} rel="stylesheet" />
-    <link href={root + "style.css?v=2026-11-16"} rel="stylesheet" />
+    <link href={root + "style.css?v=2026-11-16.2"} rel="stylesheet" />
 
     <link rel="icon" type="image/png" href={root + "favicon-96x96.png"} sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href={root + "favicon.svg"} />
@@ -130,7 +130,6 @@ const root = lang === 'ru' ? './' : '../';
       <img src={root + "avatar.jpeg"} alt={t("header.avatar")} class="header__avatar" />
       <h1 class="header__title">{t("header.title")}</h1>
       <p class="header__subtitle">{t("header.subtitle")}</p>
-      <p class="links__note"><span>{t("header.updated")}</span> <time datetime={updated}>{updated}</time></p>
     </header>
 
     <main>
@@ -141,6 +140,7 @@ const root = lang === 'ru' ? './' : '../';
           <p class="about-card__body">{t("work.text")}</p>
           <div class="work-cta">
             <a class="button-link" href={link("work.email")}>{t("work.email")}</a>
+            <a class="button-link" href={link("work.subscribe")}>{t("work.subscribe")}</a>
             <a class="button-link" href={link("work.telegram")}>{t("work.telegram")}</a>
           </div>
         </div>
@@ -412,6 +412,7 @@ const root = lang === 'ru' ? './' : '../';
 
     <footer>
       <a class="button-link" href={link("footer.cta")}>{t("footer.cta")}</a>
+      <p class="links__note"><span>{t("footer.updated")}</span> <time datetime={updated}>{updated}</time></p>
     </footer>
   </body>
 </html>
